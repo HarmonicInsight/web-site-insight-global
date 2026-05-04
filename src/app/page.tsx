@@ -7,6 +7,7 @@ import ProductsSection from "@/components/ProductsSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import UseCasesSection from "@/components/UseCasesSection";
 import ComparisonSection from "@/components/ComparisonSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import StorySection from "@/components/StorySection";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
@@ -26,6 +27,7 @@ export default function HomePage() {
         <FeaturesGrid />
         <UseCasesSection />
         <ComparisonSection />
+        <TestimonialsSection />
         <StorySection />
         <PricingSection />
         <FAQSection />

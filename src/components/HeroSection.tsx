@@ -11,13 +11,19 @@ export default function HeroSection() {
       <div className="container-narrow relative">
         <div className="max-w-4xl mx-auto text-center">
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-gold-200 text-xs font-semibold text-gold-700 mb-8 shadow-sm">
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-gold-200 text-xs font-semibold text-gold-700 mb-8 shadow-sm opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0ms" }}
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-subtle-pulse" />
             New: One Office file. Four AI operations. Layout preserved.
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 leading-[1.05] tracking-tight mb-6">
+          <h1
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 leading-[1.05] tracking-tight mb-6 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "120ms" }}
+          >
             Stop juggling 4 apps for{" "}
             <span className="relative inline-block">
               <span className="text-gradient-gold">one Office file.</span>
@@ -44,7 +50,10 @@ export default function HeroSection() {
           </h1>
 
           {/* Sub */}
-          <p className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mx-auto mb-10">
+          <p
+            className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "240ms" }}
+          >
             <strong className="text-ink-700">DeepL</strong> breaks layouts.{" "}
             <strong className="text-ink-700">ChatGPT</strong> destroys formatting.{" "}
             <strong className="text-ink-700">Acrobat</strong> drifts terminology.
@@ -55,7 +64,10 @@ export default function HeroSection() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "360ms" }}
+          >
             <a href="#pricing" className="btn-primary px-7 py-3.5 text-base">
               Get started — from $199/year
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -76,7 +88,10 @@ export default function HeroSection() {
           </div>
 
           {/* Trust line */}
-          <p className="text-xs text-ink-400">
+          <p
+            className="text-xs text-ink-400 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "480ms" }}
+          >
             <span className="inline-flex items-center gap-1.5">
               <svg className="w-3.5 h-3.5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -101,7 +116,10 @@ export default function HeroSection() {
         </div>
 
         {/* Visual mockup hint */}
-        <div className="relative mt-16 md:mt-20 max-w-5xl mx-auto">
+        <div
+          className="relative mt-16 md:mt-20 max-w-5xl mx-auto opacity-0 animate-fade-in-up"
+          style={{ animationDelay: "640ms" }}
+        >
           <div className="relative rounded-2xl overflow-hidden border border-ink-200 shadow-card bg-white">
             {/* Window chrome */}
             <div className="flex items-center gap-1.5 px-4 py-3 border-b border-ink-100 bg-ink-50">

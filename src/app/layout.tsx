@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const SITE_URL = "https://insightoffice.io";
+
 export const metadata: Metadata = {
-  title: "HARMONIC insight — Stop juggling 4 apps for one Office file",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "HARMONIC insight — Stop juggling 4 apps for one Office file",
+    template: "%s · HARMONIC insight",
+  },
   description:
-    "AI translation, simplification, summarization, and training video generation for PowerPoint, PDF, Word, and Excel — in one Windows desktop app. 47 languages, 6 AI engines, layout always preserved.",
+    "AI translation, simplification, summarization for PowerPoint, PDF, Word, and Excel — in one Windows desktop app. 47 languages, 6 AI engines, layout always preserved. BYOK · No subscription · Local processing.",
   keywords: [
     "office translator",
     "powerpoint translator",
@@ -15,20 +21,42 @@ export const metadata: Metadata = {
     "BYOK",
     "DeepL alternative",
     "ChatGPT for office",
+    "document localization",
+    "layout preserving translation",
   ],
   authors: [{ name: "HARMONIC insight" }],
+  creator: "HARMONIC insight",
+  publisher: "HARMONIC insight",
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     title: "HARMONIC insight — One Office file. Four AI operations.",
     description:
-      "Translate into 47 languages × 6 AI engines, simplify for non-native readers, summarize, and generate narrated videos. Layout always preserved. BYOK.",
+      "Translate into 47 languages × 6 AI engines, simplify for non-native readers, summarize, and polish — all with layout intact. BYOK. No subscription.",
     type: "website",
     locale: "en_US",
+    url: SITE_URL,
+    siteName: "HARMONIC insight",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HARMONIC insight — Stop juggling 4 apps for one Office file",
+    title: "Stop juggling 4 apps for one Office file",
     description:
-      "Translate, simplify, summarize PowerPoint/PDF/Word/Excel in one Windows app. 47 languages × 6 AI engines.",
+      "Translate, simplify, summarize PowerPoint/PDF/Word/Excel in one Windows app. 47 languages × 6 AI engines. Layout preserved.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
