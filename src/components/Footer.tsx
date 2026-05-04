@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="text-sm text-ink-500 leading-relaxed mb-4 max-w-md">
               Windows desktop AI tools for Office documents. Translate, simplify, summarize, and generate training videos — without breaking your layout.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2">
               <a
                 href="https://www.insight-office.com/ja"
                 target="_blank"
@@ -27,6 +27,15 @@ export default function Footer() {
               >
                 <span className="text-base">🇯🇵</span>
                 日本語サイト
+              </a>
+              <a
+                href="https://h-insight.jp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-ink-200 hover:border-gold-300 hover:bg-gold-50 text-xs text-ink-600 hover:text-ink-800 transition-colors"
+              >
+                <span className="text-sm">🏢</span>
+                Corporate
               </a>
             </div>
           </div>

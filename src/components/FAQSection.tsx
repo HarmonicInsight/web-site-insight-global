@@ -8,8 +8,8 @@ const faqs = [
     a: "Nowhere — they stay on your PC. Insight Doc Translator is a local Windows desktop app. Translation engines receive only the text content you choose to translate (via your own API keys). Your file structure, metadata, and unselected content never leave your machine.",
   },
   {
-    q: "Why is the price billed in JPY (Japanese Yen)?",
-    a: "We're a Japanese company (HARMONIC insight). The shown USD prices are approximate — at checkout, you'll pay your local currency, automatically converted from the JPY base price (¥30,000 / ¥75,000) at the current exchange rate. LemonSqueezy handles the currency conversion and acts as Merchant of Record, so your transaction is straightforward.",
+    q: "What currency will I be charged in?",
+    a: "USD is the listed price ($199 / $499). At checkout, LemonSqueezy automatically converts to your local currency at the current exchange rate. LemonSqueezy acts as Merchant of Record, handling tax, invoicing, and currency conversion globally — your transaction is straightforward whether you're in the US, EU, UK, India, or anywhere else. Note: customers based in Japan should use our domestic site insight-office.com, which offers a separate JPY-priced tier.",
   },
   {
     q: "What if I'm not happy with the product?",
