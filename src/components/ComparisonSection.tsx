@@ -1,26 +1,20 @@
 type Cell = { value: boolean | string; note?: string };
 
 const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilot: Cell }[] = [
+  // Where we lead
   {
-    feature: "Office layout preserved",
+    feature: "Office layout preserved (PPTX/DOCX/XLSX)",
     insight: { value: true },
     deepl: { value: false, note: "Often broken" },
     chatgpt: { value: false, note: "Text only" },
     copilot: { value: true, note: "Within MS only" },
   },
   {
-    feature: "Number of AI engines",
-    insight: { value: "6", note: "Claude/DeepL/Google/Azure/Gemini/OpenAI" },
-    deepl: { value: "1", note: "DeepL only" },
-    chatgpt: { value: "1", note: "OpenAI only" },
-    copilot: { value: "1", note: "Microsoft only" },
-  },
-  {
-    feature: "Number of languages",
-    insight: { value: "47" },
-    deepl: { value: "33" },
-    chatgpt: { value: "100+" },
-    copilot: { value: "100+" },
+    feature: "Multi-engine, switchable per row",
+    insight: { value: "6 engines", note: "Claude/DeepL/Google/Azure/Gemini/OpenAI" },
+    deepl: { value: false, note: "DeepL only" },
+    chatgpt: { value: false, note: "OpenAI only" },
+    copilot: { value: false, note: "Microsoft only" },
   },
   {
     feature: "Easy-language rewrite (CEFR/JLPT/HSK)",
@@ -37,32 +31,69 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
     copilot: { value: "Within MS only" },
   },
   {
-    feature: "Glossary + Translation Memory",
+    feature: "Glossary + Translation Memory (TMX)",
     insight: { value: true, note: "TMX, DeepL Glossary sync" },
     deepl: { value: "Glossary only" },
     chatgpt: { value: false },
     copilot: { value: false },
   },
   {
-    feature: "Local processing (no cloud)",
+    feature: "Local processing (file never uploaded)",
     insight: { value: true },
     deepl: { value: false },
     chatgpt: { value: false },
     copilot: { value: false },
   },
   {
-    feature: "BYOK (bring your own AI key)",
+    feature: "BYOK (use your own AI keys)",
     insight: { value: true },
     deepl: { value: false },
     chatgpt: { value: false },
     copilot: { value: false },
   },
+  // Where competitors lead — be honest
   {
-    feature: "Pricing",
-    insight: { value: "$199/year" },
-    deepl: { value: "$108/year", note: "+ subscription" },
-    chatgpt: { value: "$240/year", note: "Plus plan" },
-    copilot: { value: "$360/year", note: "+ MS 365 required" },
+    feature: "Number of languages",
+    insight: { value: "47" },
+    deepl: { value: "33" },
+    chatgpt: { value: "100+", note: "Lead" },
+    copilot: { value: "100+", note: "Lead" },
+  },
+  {
+    feature: "Raw translation quality (linguistic only)",
+    insight: { value: "On par", note: "Uses DeepL etc." },
+    deepl: { value: "Excellent", note: "Industry lead" },
+    chatgpt: { value: "Very good" },
+    copilot: { value: "Good" },
+  },
+  {
+    feature: "Conversational AI / chat",
+    insight: { value: false, note: "Not our focus" },
+    deepl: { value: false },
+    chatgpt: { value: true, note: "Lead" },
+    copilot: { value: true },
+  },
+  {
+    feature: "Native Office ribbon integration",
+    insight: { value: false },
+    deepl: { value: "Add-in" },
+    chatgpt: { value: false },
+    copilot: { value: true, note: "Lead" },
+  },
+  {
+    feature: "Free tier available",
+    insight: { value: "30-day trial" },
+    deepl: { value: true, note: "500K chars/mo" },
+    chatgpt: { value: "Limited GPT-4" },
+    copilot: { value: false },
+  },
+  // Pricing — last
+  {
+    feature: "Pricing (English-language tier)",
+    insight: { value: "$199 / year", note: "Per device, perpetual + 1y updates" },
+    deepl: { value: "$108 / year", note: "Subscription" },
+    chatgpt: { value: "$240 / year", note: "Plus plan" },
+    copilot: { value: "$360 / year", note: "Requires MS 365" },
   },
 ];
 
@@ -101,7 +132,8 @@ export default function ComparisonSection() {
             <span className="text-gradient-gold">three subscriptions.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Honest comparison. We don't claim to be best at everything — we claim to be the only one that does <em>all of it</em> on the same Office file.
+            Honest comparison — we mark the rows where{" "}
+            <strong className="text-ink-800">competitors lead</strong> too. We don't claim to be best at everything; we claim to be the only one that does <em>all of it</em> on the same Office file, with your layout intact.
           </p>
         </div>
 
