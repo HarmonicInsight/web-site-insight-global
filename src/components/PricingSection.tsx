@@ -144,7 +144,7 @@ export default function PricingSection() {
         ))}
 
         <p className="text-xs text-ink-400 text-center mt-10 max-w-2xl mx-auto">
-          Pricing in USD is approximate. Billed in JPY (¥30,000 / ¥75,000) with automatic conversion to your local currency at checkout.
+          Prices are billed in USD. LemonSqueezy auto-converts to your local currency at checkout using the current exchange rate, and acts as Merchant of Record for tax and invoicing globally.
           30-day money-back guarantee. Looking for an enterprise plan or invoice billing?{" "}
           <a href="mailto:contact@h-insight.jp" className="text-gold-700 hover:text-gold-800 underline">Contact us</a>.
         </p>

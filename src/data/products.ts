@@ -1,10 +1,8 @@
 /**
  * Global product catalog and Checkout URLs.
  *
- * The new Global LemonSqueezy store is being set up separately.
- * Until it's live, env vars or fallback URLs control the actual Checkout destinations.
- *
- * Once the new store is created, set these env vars on Vercel:
+ * Live store: harmonic-insight-global.lemonsqueezy.com (separate from the JP store).
+ * Env vars on Vercel can override these (useful for staging / future re-mapping):
  *   NEXT_PUBLIC_LS_GLOBAL_INST_PERS  — INST Personal variant URL
  *   NEXT_PUBLIC_LS_GLOBAL_INST_BIZ   — INST Business variant URL
  *   NEXT_PUBLIC_LS_GLOBAL_INMV_PERS  — INMV Personal variant URL
@@ -12,11 +10,10 @@
  */
 
 const FALLBACK_CHECKOUT = {
-  // 暫定: Global store ができるまでは既存 JP store の Global版variant に飛ばす
-  INST_PERS: "https://harmonic-insight.lemonsqueezy.com/checkout/buy/01531472-5828-4771-81f2-4fefe0c64fd6",
-  INST_BIZ: "https://harmonic-insight.lemonsqueezy.com/checkout/buy/30ef5925-4a7a-40d1-ab09-679ff702e22f",
-  INMV_PERS: "https://harmonic-insight.lemonsqueezy.com/checkout/buy/d893fd97-3653-4d0a-b5ab-c95b3ff3843a",
-  INMV_BIZ: "https://harmonic-insight.lemonsqueezy.com/checkout/buy/a26d7be1-897f-47cc-b973-293d111cbcb2",
+  INST_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/83eaa3a9-d5cc-4f92-badd-61172d3f1689",
+  INST_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/f50fb84b-2afa-446b-82ef-64caa3a09964",
+  INMV_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/8188b251-c68e-437a-8c85-143e90038ec7",
+  INMV_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/8bd3095e-f4b0-4a67-9e4b-a2420c4d8195",
 };
 
 export const CHECKOUT_URLS = {
