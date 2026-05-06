@@ -7,11 +7,11 @@ export default function PricingSection() {
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">Pricing</p>
           <h2 className="text-3xl md:text-5xl font-bold text-ink-900 leading-tight tracking-tight mb-5">
-            One license, one file,{" "}
-            <span className="text-gradient-gold">no subscriptions to your AI bills.</span>
+            Buy once.{" "}
+            <span className="text-gradient-gold">Keep it.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Annual subscription with a 30-day money-back guarantee. BYOK keeps your AI cost in your control.
+            Annual license with a 30-day money-back guarantee. AI usage billed directly from DeepL or OpenAI to you — never to us.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function PricingSection() {
                     <svg className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    BYOK — your AI keys
+                    Use your own DeepL / OpenAI keys
                   </li>
                   <li className="flex items-start gap-2 text-sm text-ink-600">
                     <svg className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

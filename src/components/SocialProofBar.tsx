@@ -1,10 +1,10 @@
 export default function SocialProofBar() {
   const items = [
-    { label: "47 languages", desc: "from English to Burmese" },
-    { label: "6 AI engines", desc: "DeepL, Google, Azure, Claude, Gemini, OpenAI" },
+    { label: "47 languages", desc: "English to Burmese, and everything in between" },
+    { label: "6 AI engines", desc: "DeepL · Google · Azure · Claude · Gemini · OpenAI" },
     { label: "4 file formats", desc: "PPTX · PDF · DOCX · XLSX" },
-    { label: "BYOK", desc: "your keys, your data" },
-    { label: "Local-first", desc: "no cloud upload" },
+    { label: "Your AI keys", desc: "BYOK — direct billing, not ours" },
+    { label: "Local-first", desc: "your file never goes to the cloud" },
   ];
 
   return (

@@ -89,8 +89,8 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   },
   // Pricing — last
   {
-    feature: "Pricing (English-language tier)",
-    insight: { value: "$199 / year", note: "Per device, perpetual + 1y updates" },
+    feature: "Annual price",
+    insight: { value: "$199 / year", note: "Lifetime license + 1y updates" },
     deepl: { value: "$108 / year", note: "Subscription" },
     chatgpt: { value: "$240 / year", note: "Plus plan" },
     copilot: { value: "$360 / year", note: "Requires MS 365" },

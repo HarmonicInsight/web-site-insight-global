@@ -46,12 +46,12 @@ export default function NewsletterSection() {
             Stay in the loop
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-4">
-            Get notified when{" "}
-            <span className="text-gradient-gold">macOS support arrives.</span>
+            We&apos;ll email you when{" "}
+            <span className="text-gradient-gold">macOS lands.</span>
           </h2>
           <p className="text-base text-ink-500 leading-relaxed mb-8">
             One email per release. Product updates, new languages, new file
-            formats — that's it. No marketing fluff. Unsubscribe anytime.
+            formats. That&apos;s it. Unsubscribe anytime.
           </p>
 
           <form
@@ -115,14 +115,14 @@ export default function NewsletterSection() {
           )}
 
           <p className="text-xs text-ink-400 mt-6">
-            We use your email only to send release updates. We never share or sell it. See{" "}
+            We email you about releases. That&apos;s all. Never shared, never sold. See our{" "}
             <a
               href="https://license.h-insight.jp/policy?lang=en"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-ink-600"
             >
-              Privacy Policy
+              privacy policy
             </a>
             .
           </p>

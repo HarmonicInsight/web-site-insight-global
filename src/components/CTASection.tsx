@@ -14,11 +14,11 @@ export default function CTASection() {
               Stop the juggling
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5">
-              One Office file.{" "}
-              <span className="text-gradient-gold">All operations.</span>
+              One Office document.{" "}
+              <span className="text-gradient-gold">Every operation.</span>
             </h2>
             <p className="text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto mb-10">
-              Try free for 30 days. No credit card. No setup. Just download, drop a file, and see what happens.
+              30-day trial. No credit card. No setup. Download, drop a file, and see what happens.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -52,7 +52,7 @@ export default function CTASection() {
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                BYOK — your AI keys, your bill
+                Use your own AI keys
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

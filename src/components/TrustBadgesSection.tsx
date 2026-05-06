@@ -22,8 +22,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "BYOK",
-      caption: "Your AI keys, your bills, your data",
+      title: "Use your own AI keys",
+      caption: "Direct billing from DeepL/OpenAI to you (BYOK)",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <circle cx="9" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
@@ -37,8 +37,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "Made in Japan",
-      caption: "Tokyo-based · craft over scale",
+      title: "Built in Tokyo",
+      caption: "Independent. No VC. No growth-hacks.",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
@@ -62,8 +62,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "MoR by Lemon Squeezy",
-      caption: "Tax + invoicing handled globally",
+      title: "Tax + invoicing covered",
+      caption: "Lemon Squeezy is our merchant of record",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <path
@@ -82,8 +82,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "Buy once, own forever",
-      caption: "Per-device perpetual + 1y updates",
+      title: "Buy once. Keep it.",
+      caption: "Lifetime license, one year of updates",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" strokeWidth="1.6" />

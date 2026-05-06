@@ -44,18 +44,18 @@ export const products: Product[] = [
   {
     code: "INST",
     name: "Insight Doc Translator",
-    tagline: "Translate, simplify, summarize, polish — one Office file, all operations.",
+    tagline: "Translate, simplify, summarize, refine — one Office document, four operations.",
     iconBg: "from-rose-400 via-pink-500 to-fuchsia-600",
     emoji: "🌐",
     description:
-      "Stop juggling DeepL for translation, ChatGPT for simplification, and Acrobat for PDFs. Insight Doc Translator handles all of it on one file with layout fully preserved.",
+      "DeepL for translation, ChatGPT for simplification, Acrobat for PDFs — Insight Doc Translator does all of it on one file, with your layout fully preserved.",
     features: [
-      { title: "47 languages × 6 AI engines", desc: "DeepL · Google · Azure · Claude · Gemini · OpenAI. Switch per file or per row." },
-      { title: "4 operations on one file", desc: "Translate · Simplify (CEFR/JLPT/HSK/TOPIK) · Summarize · Polish to formal tone." },
-      { title: "Layout always preserved", desc: "Fonts, tables, images, embedded objects — exactly as the original." },
-      { title: "Glossary + Translation Memory", desc: "CSV/Excel + DeepL Glossary sync, TMX standard. CAT-tool features in a drag-and-drop UI." },
-      { title: "BYOK (Bring Your Own Key)", desc: "Use your API keys for any of the 6 engines. ~3M chars/month free across providers." },
-      { title: "Local processing only", desc: "Your documents never leave your PC. No cloud upload, no data harvesting." },
+      { title: "47 languages, 6 AI engines", desc: "DeepL · Google · Azure · Claude · Gemini · OpenAI. Switch per file or per row." },
+      { title: "Four operations on one file", desc: "Translate · Simplify (CEFR / JLPT / HSK / TOPIK) · Summarize · Refine to formal tone." },
+      { title: "Layout stays intact", desc: "Fonts, tables, images, embedded objects — preserved exactly as the original." },
+      { title: "Glossary + translation memory", desc: "CSV/Excel + DeepL Glossary sync, TMX standard. CAT-tool features in a drag-and-drop UI." },
+      { title: "Use your own AI keys (BYOK)", desc: "Bring keys for any of the six engines. Most teams stay within free tiers (~3M chars/month, combined)." },
+      { title: "Local processing", desc: "Your documents never leave your PC. No cloud upload. No data harvesting." },
     ],
     bestFor: [
       "Localization specialists tired of post-editing layout breaks",
@@ -68,18 +68,18 @@ export const products: Product[] = [
   {
     code: "INMV",
     name: "Insight Training Studio",
-    tagline: "Your slides already have the script. Turn them into a video.",
+    tagline: "Your slides already have the script. Turn them into a narrated video.",
     iconBg: "from-violet-400 via-purple-500 to-indigo-600",
     emoji: "🎬",
     description:
-      "Producing one training video the traditional way: voice actor + studio + editor + 2 weeks + $1,800-3,000. Insight Training Studio replaces all of it with a Windows app: drop a PowerPoint, choose narration language, export MP4 in 5 minutes.",
+      "The traditional way to produce one training video: voice actor + studio + editor + two weeks + $1,800–3,000. The Insight Training Studio way: drop a PowerPoint, pick a narration language, export MP4 in five minutes.",
     features: [
-      { title: "PowerPoint or PDF → MP4 in 5 min", desc: "Speaker notes become AI narration. No voice actor, no studio, no editor." },
-      { title: "47-language AI narration", desc: "Edge Neural TTS covers all 47 languages with near-human voices." },
-      { title: "3 TTS engines, freely switchable", desc: "Cloud (Edge Neural) + Offline (VOICEVOX, Windows OneCore)." },
-      { title: "Pro-quality output", desc: "Auto subtitles, BGM library, 8 transitions, AI thumbnails, watermarks, step capture." },
-      { title: "MP4 export up to 1080p", desc: "Standard format, plays anywhere. Up to 200 MB per video." },
-      { title: "Local processing only", desc: "Your slides and narration stay on your PC. No cloud upload." },
+      { title: "PowerPoint or PDF → MP4 in five minutes", desc: "Speaker notes become AI narration. No voice actor. No studio. No editor." },
+      { title: "47-language AI narration", desc: "Edge Neural TTS delivers near-human voices across all 47 languages." },
+      { title: "Three TTS engines, freely switchable", desc: "Cloud (Edge Neural) + offline (VOICEVOX, Windows OneCore)." },
+      { title: "Pro-quality output", desc: "Auto subtitles, BGM library, eight transitions, AI thumbnails, watermarks, step capture." },
+      { title: "MP4 export up to 1080p", desc: "A standard format that plays anywhere. Up to 200 MB per video." },
+      { title: "Local processing", desc: "Your slides and narration stay on your PC. No cloud upload." },
     ],
     bestFor: [
       "Corporate training teams with PowerPoint backlogs",

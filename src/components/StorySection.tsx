@@ -36,11 +36,11 @@ export default function StorySection() {
                 60 times.
               </p>
               <p>
-                There had to be a better way. So we built one.
+                That Saturday became this app.
               </p>
               <p className="text-base text-ink-300 italic">
-                No subscriptions. No data lock-in. Bring your own DeepL or OpenAI key —
-                we don't see your text. Pay once for the tool. That's it.
+                No subscriptions. No data lock-in. Use your own DeepL or OpenAI key —
+                we never see your text. Pay once for the tool. That's it.
               </p>
             </div>
 
@@ -70,22 +70,22 @@ export default function StorySection() {
                   {
                     title: "Your data stays yours",
                     body:
-                      "BYOK means we never see your files or text. The app talks directly to DeepL/OpenAI from your machine.",
+                      "We never see your files or text. The app talks directly to DeepL or OpenAI from your machine, with your own API key.",
                   },
                   {
-                    title: "Buy once, own forever",
+                    title: "Buy once. Keep it.",
                     body:
-                      "Per-device perpetual license + 1 year of updates. No SaaS subscription fatigue.",
+                      "Lifetime per-device license, with one year of updates. No subscriptions to forget about.",
                   },
                   {
-                    title: "Layouts are sacred",
+                    title: "Layouts stay exactly as you sent them",
                     body:
-                      "Output must look indistinguishable from the source. Fonts, tables, formulas — all preserved.",
+                      "Fonts, tables, formulas, embedded objects — preserved bit-for-bit. Your finished file looks like your source file.",
                   },
                   {
-                    title: "Speak human, not machine",
+                    title: "Sound like a person",
                     body:
-                      "Outputs adjust to register: friendly emails, formal contracts, plain-language briefings.",
+                      "Outputs adjust to register: friendly emails, formal contracts, plain-language briefings — never a translation artifact.",
                   },
                 ].map((p) => (
                   <li key={p.title} className="flex gap-3">

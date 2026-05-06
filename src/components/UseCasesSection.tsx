@@ -3,11 +3,11 @@ export default function UseCasesSection() {
     {
       industry: "Software & SaaS",
       icon: "💻",
-      headline: "Ship product docs in 14 languages without a localization team",
+      headline: "Ship product docs in any language, without a localization team",
       description:
         "Your release notes, API docs, and pitch decks — translated and reformatted in minutes. Engineers stay shipping. Marketing stays on schedule.",
-      stat: "14×",
-      statLabel: "faster docs localization",
+      stat: "47",
+      statLabel: "languages, one workflow",
       gradient: "from-violet-500/10 to-blue-500/10",
       border: "border-violet-200",
       accent: "text-violet-700",

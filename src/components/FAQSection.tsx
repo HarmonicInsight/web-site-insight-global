@@ -1,35 +1,35 @@
 const faqs = [
   {
-    q: "What does BYOK (Bring Your Own Key) mean?",
-    a: "You bring your own API keys for the AI engines (DeepL, Google, Azure, Claude, Gemini, OpenAI). Your AI usage is billed directly by those providers, not by us. This keeps your AI cost transparent and under your control. Most users stay within free tiers (~3M chars/month combined across DeepL, Google, Azure).",
+    q: "What does “use your own AI key” (BYOK) mean?",
+    a: "You bring your own API key from DeepL, Google, Azure, Claude, Gemini, or OpenAI. AI usage is billed by those providers directly to you, never to us — and most teams stay inside their providers’ free tiers (around 3M characters per month, combined). It keeps your AI costs transparent and under your control.",
   },
   {
     q: "Where do my documents go?",
-    a: "Nowhere — they stay on your PC. Insight Doc Translator is a local Windows desktop app. Translation engines receive only the text content you choose to translate (via your own API keys). Your file structure, metadata, and unselected content never leave your machine.",
+    a: "Nowhere. The app runs on your PC, and only the text you choose to translate ever reaches an AI provider — using your own API key, billed directly to you. File structure, metadata, and unselected content never leave your machine.",
   },
   {
     q: "What currency will I be charged in?",
-    a: "USD is the listed price ($199 / $499). At checkout, LemonSqueezy automatically converts to your local currency at the current exchange rate. LemonSqueezy acts as Merchant of Record, handling tax, invoicing, and currency conversion globally — your transaction is straightforward whether you're in the US, EU, UK, India, or anywhere else. Note: customers based in Japan should use our domestic site insight-office.com, which offers a separate JPY-priced tier.",
+    a: "USD ($199 / $499). At checkout, Lemon Squeezy converts to your local currency at the current exchange rate, and acts as our merchant of record — so tax, invoicing, and conversion are handled in one step whether you’re in the US, EU, UK, India, or anywhere else. Customers in Japan should use insight-office.com, which carries a separate JPY-priced tier.",
   },
   {
-    q: "What if I'm not happy with the product?",
-    a: "30-day money-back guarantee, no questions asked. If you don't see a 5x time savings on your typical workflow within 30 days, email us and we'll refund the full amount.",
+    q: "What if it doesn’t work for me?",
+    a: "30-day money back, no questions asked. If your typical workflow doesn’t feel meaningfully faster within 30 days, email us and we’ll refund in full.",
   },
   {
     q: "Does it work on macOS or Linux?",
-    a: "Currently Windows-only. PowerPoint, Excel, and Word are most heavily used on Windows in business contexts, so we focused there first. macOS support is on the roadmap — sign up for the trial to be notified.",
+    a: "Built first for Windows — that’s where most Office work happens in business. macOS is on the roadmap; sign up for the newsletter and we’ll email you when it lands.",
   },
   {
     q: "How is this different from DeepL?",
-    a: "DeepL is excellent at translation, but: (1) it doesn't preserve PowerPoint layouts well, (2) it can't simplify or summarize content, (3) it locks you into one engine. We let you switch between 6 engines per file or per row, on top of layout-preserving format support and intralingual rewrite.",
+    a: "DeepL is excellent at the translation itself — we use it as one of our engines. The difference is what happens to the rest of your file. DeepL doesn’t preserve PowerPoint layouts well, can’t simplify or summarize, and locks you into one engine. We keep your layout intact, let you switch between six engines per row, and add simplify, summarize, and refine on top of translation.",
   },
   {
     q: "Can I share licenses with my team?",
-    a: "Yes — purchase Business plan ($499/seat/year) and add as many seats as you need. Each seat is one device. The Business plan includes shared glossary and translation memory across the team.",
+    a: "Yes. Pick the Business plan ($499 per seat per year) and add as many seats as you need — one seat per device. Business also unlocks a shared glossary and translation memory across the team.",
   },
   {
-    q: "What languages does the 'Simplify' feature support?",
-    a: "All target languages can be simplified to lower CEFR levels (A1/A2). Proficiency standards are aware of your target: CEFR for European languages, JLPT for Japanese, HSK for Chinese, TOPIK for Korean. The AI adjusts vocabulary and grammar to match the intended reading level.",
+    q: "What languages does Simplify support?",
+    a: "Every target language can be rewritten to a lower proficiency level — CEFR for European languages, JLPT for Japanese, HSK for Chinese, TOPIK for Korean. The AI adjusts vocabulary and grammar to match the level you set (down to A1/A2).",
   },
 ];
 

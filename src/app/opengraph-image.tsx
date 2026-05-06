@@ -94,7 +94,7 @@ export default function OGImage() {
               flexDirection: "column",
             }}
           >
-            <span>Stop juggling 4 apps</span>
+            <span>Stop juggling three apps</span>
             <span>
               for{" "}
               <span
@@ -104,7 +104,7 @@ export default function OGImage() {
                   color: "transparent",
                 }}
               >
-                one Office file.
+                one Office document.
               </span>
             </span>
           </div>
@@ -117,7 +117,7 @@ export default function OGImage() {
               display: "flex",
             }}
           >
-            Translate · Simplify · Summarize · Polish — layout always preserved.
+            Translate · Simplify · Summarize · Refine — layout always preserved.
           </div>
         </div>
 

@@ -16,7 +16,7 @@ export default function HeroSection() {
             style={{ animationDelay: "0ms" }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-subtle-pulse" />
-            New: One Office file. Four AI operations. Layout preserved.
+            One Office document. Four AI operations. Layout untouched.
           </div>
 
           {/* Headline */}
@@ -24,9 +24,9 @@ export default function HeroSection() {
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 leading-[1.05] tracking-tight mb-6 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "120ms" }}
           >
-            Stop juggling 4 apps for{" "}
+            Stop juggling three apps for{" "}
             <span className="relative inline-block">
-              <span className="text-gradient-gold">one Office file.</span>
+              <span className="text-gradient-gold">one Office document.</span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 300 12"
@@ -55,11 +55,11 @@ export default function HeroSection() {
             style={{ animationDelay: "240ms" }}
           >
             <strong className="text-ink-700">DeepL</strong> breaks layouts.{" "}
-            <strong className="text-ink-700">ChatGPT</strong> destroys formatting.{" "}
-            <strong className="text-ink-700">Acrobat</strong> drifts terminology.
+            <strong className="text-ink-700">ChatGPT</strong> loses formatting.{" "}
+            <strong className="text-ink-700">Acrobat</strong> drifts on terminology.
             <br className="hidden md:block" />
             <span className="text-ink-900 font-medium">
-              {" "}One Windows app translates, simplifies, summarizes, and polishes — with layout intact.
+              {" "}One desktop app translates, simplifies, summarizes, and refines. Your layout stays exactly as you sent it.
             </span>
           </p>
 
@@ -68,22 +68,22 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "360ms" }}
           >
-            <a href="#pricing" className="btn-primary px-7 py-3.5 text-base">
-              Get started — from $199/year
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
             <a
               href="https://license.h-insight.jp/download/INST?lang=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary px-7 py-3.5 text-base"
+              className="btn-primary px-7 py-3.5 text-base"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Try free for 30 days
+              Start free trial
+            </a>
+            <a href="#pricing" className="btn-secondary px-7 py-3.5 text-base">
+              See pricing
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
             </a>
           </div>
 

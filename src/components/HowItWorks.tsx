@@ -25,7 +25,7 @@ export default function HowItWorks() {
     {
       number: "02",
       title: "Choose your operation",
-      description: "Translate, Simplify, Summarize, or Polish. Pick a language and engine — switch per row if needed.",
+      description: "Translate, Simplify, Summarize, or Refine. Pick a language and engine. Switch per row if you need to.",
       visual: (
         <div className="rounded-xl bg-gradient-to-br from-gold-50 to-white border border-gold-100 p-6 h-full">
           <div className="space-y-2">
@@ -33,7 +33,7 @@ export default function HowItWorks() {
               { label: "Translate", icon: "🌐", active: true },
               { label: "Simplify (CEFR A1/A2)", icon: "🌱", active: false },
               { label: "Summarize (½ length)", icon: "✂", active: false },
-              { label: "Polish (formal tone)", icon: "🎩", active: false },
+              { label: "Refine (formal tone)", icon: "🎩", active: false },
             ].map((op) => (
               <div
                 key={op.label}

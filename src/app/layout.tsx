@@ -6,11 +6,11 @@ const SITE_URL = "https://insightoffice.io";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "HARMONIC insight — Stop juggling 4 apps for one Office file",
+    default: "HARMONIC insight — Stop juggling three apps for one Office document",
     template: "%s · HARMONIC insight",
   },
   description:
-    "AI translation, simplification, summarization for PowerPoint, PDF, Word, and Excel — in one Windows desktop app. 47 languages, 6 AI engines, layout always preserved. BYOK · No subscription · Local processing.",
+    "AI translation, simplification, and summarization for PowerPoint, PDF, Word, and Excel — in one desktop app. 47 languages, 6 AI engines, layout untouched. Use your own AI keys. No subscription. Local processing.",
   keywords: [
     "office translator",
     "powerpoint translator",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "HARMONIC insight — One Office file. Four AI operations.",
+    title: "HARMONIC insight — One Office document. Four AI operations.",
     description:
-      "Translate into 47 languages × 6 AI engines, simplify for non-native readers, summarize, and polish — all with layout intact. BYOK. No subscription.",
+      "Translate into 47 languages across 6 AI engines, simplify for non-native readers, summarize, and refine — layout untouched. Use your own AI keys. No subscription.",
     type: "website",
     locale: "en_US",
     url: SITE_URL,
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stop juggling 4 apps for one Office file",
+    title: "Stop juggling three apps for one Office document",
     description:
-      "Translate, simplify, summarize PowerPoint/PDF/Word/Excel in one Windows app. 47 languages × 6 AI engines. Layout preserved.",
+      "Translate, simplify, summarize, and refine PowerPoint, PDF, Word, and Excel in one desktop app. 47 languages, 6 AI engines, layout untouched.",
   },
   robots: {
     index: true,
