@@ -2,7 +2,7 @@ export default function ProblemSection() {
   const before = [
     { app: "DeepL", action: "Translate the slide", problem: "Layout breaks. Tables collapse. Fonts change." },
     { app: "ChatGPT", action: "Simplify the language", problem: "Format gone. Have to rebuild from text dump." },
-    { app: "Acrobat", action: "Open the PDF", problem: "Terminology drifts. Glossary not enforced." },
+    { app: "Acrobat", action: "Open the PDF", problem: "Terminology slips. Glossary not enforced." },
     { app: "PowerPoint", action: "Manually fix everything", problem: "Two hours per file. Every. Single. Time." },
   ];
 
@@ -49,7 +49,7 @@ export default function ProblemSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
             <span className="text-sm md:text-base font-medium">
-              We built one app to do all of it. Layout always preserved.
+              We built one app for all of it. Layout intact.
             </span>
           </div>
         </div>

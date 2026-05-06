@@ -11,7 +11,7 @@ export default function PricingSection() {
             <span className="text-gradient-gold">Keep it.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Annual license with a 30-day money-back guarantee. AI usage billed directly from DeepL or OpenAI to you — never to us.
+            One-time purchase. One year of free updates. Use it forever. AI usage is billed by DeepL or OpenAI directly to you — never to us.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function PricingSection() {
                   rel="noopener noreferrer"
                   className="block w-full text-center px-5 py-3 rounded-xl bg-ink-900 hover:bg-ink-800 text-white text-sm font-semibold transition-colors"
                 >
-                  Buy Personal
+                  Get Personal — {product.prices.personal}
                 </a>
               </div>
 
@@ -135,7 +135,7 @@ export default function PricingSection() {
                     rel="noopener noreferrer"
                     className="block w-full text-center px-5 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-ink-900 text-sm font-bold transition-all shadow-glow-gold"
                   >
-                    Buy Business
+                    Get Business — {product.prices.business}
                   </a>
                 </div>
               </div>
@@ -144,8 +144,8 @@ export default function PricingSection() {
         ))}
 
         <p className="text-xs text-ink-400 text-center mt-10 max-w-2xl mx-auto">
-          Prices are billed in USD. LemonSqueezy auto-converts to your local currency at checkout using the current exchange rate, and acts as Merchant of Record for tax and invoicing globally.
-          30-day money-back guarantee. Looking for an enterprise plan or invoice billing?{" "}
+          Prices are billed in USD. Lemon Squeezy converts to your local currency at checkout, and handles tax and invoices globally.
+          30-day refund, no questions asked. Looking for an enterprise plan or invoice billing?{" "}
           <a href="mailto:contact@h-insight.jp" className="text-gold-700 hover:text-gold-800 underline">Contact us</a>.
         </p>
       </div>

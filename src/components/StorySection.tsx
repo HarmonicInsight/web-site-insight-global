@@ -36,11 +36,10 @@ export default function StorySection() {
                 60 times.
               </p>
               <p>
-                That Saturday became this app.
+                That Saturday became this app — and the Mondays that followed.
               </p>
               <p className="text-base text-ink-300 italic">
-                No subscriptions. No data lock-in. Use your own DeepL or OpenAI key —
-                we never see your text. Pay once for the tool. That's it.
+                No subscriptions. No data lock-in. Use your own DeepL or OpenAI key — we never see your text. Pay once. That&apos;s it.
               </p>
             </div>
 
@@ -78,7 +77,7 @@ export default function StorySection() {
                       "Lifetime per-device license, with one year of updates. No subscriptions to forget about.",
                   },
                   {
-                    title: "Layouts stay exactly as you sent them",
+                    title: "Layouts come through untouched",
                     body:
                       "Fonts, tables, formulas, embedded objects — preserved bit-for-bit. Your finished file looks like your source file.",
                   },

@@ -23,7 +23,7 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
       </svg>
     ),
-    title: "Layout stays exactly as you sent it",
+    title: "Layout comes through untouched",
     desc: "Fonts, tables, images, embedded objects — preserved exactly. Drop in, choose your target language, get a clean output. Zero post-editing.",
   },
   {
@@ -60,13 +60,13 @@ export default function FeaturesGrid() {
     <section id="features" className="py-20 md:py-28 bg-white">
       <div className="container-narrow">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">What's inside</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">The toolkit</p>
           <h2 className="text-3xl md:text-5xl font-bold text-ink-900 leading-tight tracking-tight mb-5">
-            Everything you need to{" "}
-            <span className="text-gradient-gold">stop the juggling.</span>
+            Everything you need.{" "}
+            <span className="text-gradient-gold">Nothing you don&apos;t.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Built from the ground up for knowledge workers who deal with multilingual Office documents every day.
+            Built from the ground up for knowledge workers who handle multilingual Office files every day.
           </p>
         </div>
 

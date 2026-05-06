@@ -11,11 +11,11 @@ export default function CTASection() {
 
           <div className="relative">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-400 mb-4">
-              Stop the juggling
+              One tool replaces three
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5">
-              One Office document.{" "}
-              <span className="text-gradient-gold">Every operation.</span>
+              One Office file.{" "}
+              <span className="text-gradient-gold">Every kind of work.</span>
             </h2>
             <p className="text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto mb-10">
               30-day trial. No credit card. No setup. Download, drop a file, and see what happens.
@@ -31,7 +31,7 @@ export default function CTASection() {
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Start 30-day free trial
+                Try it free
               </a>
               <a
                 href="#pricing"
@@ -46,7 +46,7 @@ export default function CTASection() {
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                30-day money-back guarantee
+                30-day refund, no questions asked
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

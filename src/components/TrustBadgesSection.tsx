@@ -23,7 +23,7 @@ export default function TrustBadgesSection() {
     },
     {
       title: "Use your own AI keys",
-      caption: "Direct billing from DeepL/OpenAI to you (BYOK)",
+      caption: "DeepL and OpenAI bill you directly (BYOK)",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <circle cx="9" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
@@ -38,7 +38,7 @@ export default function TrustBadgesSection() {
     },
     {
       title: "Built in Tokyo",
-      caption: "Independent. No VC. No growth-hacks.",
+      caption: "Independent. No VC. No fake urgency.",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
@@ -63,7 +63,7 @@ export default function TrustBadgesSection() {
     },
     {
       title: "Tax + invoicing covered",
-      caption: "Lemon Squeezy is our merchant of record",
+      caption: "Lemon Squeezy handles tax and invoices globally",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <path

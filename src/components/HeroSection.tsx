@@ -16,7 +16,7 @@ export default function HeroSection() {
             style={{ animationDelay: "0ms" }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-subtle-pulse" />
-            One Office document. Four AI operations. Layout untouched.
+            One file. Four kinds of work. Layout intact.
           </div>
 
           {/* Headline */}
@@ -26,7 +26,7 @@ export default function HeroSection() {
           >
             Stop juggling three apps for{" "}
             <span className="relative inline-block">
-              <span className="text-gradient-gold">one Office document.</span>
+              <span className="text-gradient-gold">one Office file.</span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 300 12"
@@ -54,12 +54,12 @@ export default function HeroSection() {
             className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "240ms" }}
           >
-            <strong className="text-ink-700">DeepL</strong> breaks layouts.{" "}
-            <strong className="text-ink-700">ChatGPT</strong> loses formatting.{" "}
-            <strong className="text-ink-700">Acrobat</strong> drifts on terminology.
+            <strong className="text-ink-700">DeepL</strong> breaks the layout.{" "}
+            <strong className="text-ink-700">ChatGPT</strong> loses the formatting.{" "}
+            <strong className="text-ink-700">Acrobat</strong> misses your terminology.
             <br className="hidden md:block" />
             <span className="text-ink-900 font-medium">
-              {" "}One desktop app translates, simplifies, summarizes, and refines. Your layout stays exactly as you sent it.
+              {" "}One desktop app does all three. Your layout comes through untouched.
             </span>
           </p>
 
@@ -77,7 +77,7 @@ export default function HeroSection() {
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Start free trial
+              Try it free
             </a>
             <a href="#pricing" className="btn-secondary px-7 py-3.5 text-base">
               See pricing
@@ -103,7 +103,7 @@ export default function HeroSection() {
               <svg className="w-3.5 h-3.5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              30-day money-back
+              30-day refund
             </span>
             <span className="mx-3">·</span>
             <span className="inline-flex items-center gap-1.5">

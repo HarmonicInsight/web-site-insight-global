@@ -16,7 +16,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-ink-500 leading-relaxed mb-4 max-w-md">
-              Windows desktop AI tools for Office documents. Translate, simplify, summarize, and generate training videos — without breaking your layout.
+              Desktop AI for your Office files. Translate, simplify, summarize, and turn slides into narrated videos — without breaking your layout.
             </p>
             <div className="flex flex-wrap items-center gap-2">
               <a

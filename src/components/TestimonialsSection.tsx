@@ -10,7 +10,7 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "Layout preservation is the killer feature. Other tools turn my deck into a wall of text — this just works. Charts, tables, brand fonts: untouched.",
+        "What sold me was the layout. Other tools turn my deck into a wall of text. This one keeps the charts, the tables, the brand fonts — exactly as I built them.",
       name: "Yuki S.",
       role: "Product designer · Tokyo",
       avatar: "Y",

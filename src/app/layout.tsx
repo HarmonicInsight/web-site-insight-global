@@ -6,7 +6,7 @@ const SITE_URL = "https://insightoffice.io";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "HARMONIC insight — Stop juggling three apps for one Office document",
+    default: "HARMONIC insight — Stop juggling three apps for one Office file",
     template: "%s · HARMONIC insight",
   },
   description:
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "HARMONIC insight — One Office document. Four AI operations.",
+    title: "HARMONIC insight — One Office file. Four kinds of work.",
     description:
       "Translate into 47 languages across 6 AI engines, simplify for non-native readers, summarize, and refine — layout untouched. Use your own AI keys. No subscription.",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stop juggling three apps for one Office document",
+    title: "Stop juggling three apps for one Office file",
     description:
       "Translate, simplify, summarize, and refine PowerPoint, PDF, Word, and Excel in one desktop app. 47 languages, 6 AI engines, layout untouched.",
   },

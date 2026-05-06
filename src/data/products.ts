@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     code: "INST",
     name: "Insight Doc Translator",
-    tagline: "Translate, simplify, summarize, refine — one Office document, four operations.",
+    tagline: "Four kinds of work. One Office file. Layout intact.",
     iconBg: "from-rose-400 via-pink-500 to-fuchsia-600",
     emoji: "🌐",
     description:

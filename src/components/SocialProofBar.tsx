@@ -11,7 +11,7 @@ export default function SocialProofBar() {
     <section className="py-10 border-y border-ink-100 bg-white">
       <div className="container-narrow">
         <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-ink-400 mb-6">
-          Built for serious workflows
+          By the numbers
         </p>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
           {items.map((item) => (

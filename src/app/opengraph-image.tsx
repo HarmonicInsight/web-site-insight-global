@@ -104,7 +104,7 @@ export default function OGImage() {
                   color: "transparent",
                 }}
               >
-                one Office document.
+                one Office file.
               </span>
             </span>
           </div>

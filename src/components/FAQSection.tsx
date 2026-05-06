@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "What currency will I be charged in?",
-    a: "USD ($199 / $499). At checkout, Lemon Squeezy converts to your local currency at the current exchange rate, and acts as our merchant of record — so tax, invoicing, and conversion are handled in one step whether you’re in the US, EU, UK, India, or anywhere else. Customers in Japan should use insight-office.com, which carries a separate JPY-priced tier.",
+    a: "USD ($199 / $499). At checkout, Lemon Squeezy converts to your local currency at the current rate and handles tax and invoices in one step — whether you’re in the US, EU, UK, India, or anywhere else. Customers in Japan should use insight-office.com, which carries a separate JPY-priced tier.",
   },
   {
     q: "What if it doesn’t work for me?",
@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: "Does it work on macOS or Linux?",
-    a: "Built first for Windows — that’s where most Office work happens in business. macOS is on the roadmap; sign up for the newsletter and we’ll email you when it lands.",
+    a: "Built first for Windows — that’s where Office gets done. macOS is on the roadmap; sign up for the newsletter and we’ll email you when it lands.",
   },
   {
     q: "How is this different from DeepL?",
-    a: "DeepL is excellent at the translation itself — we use it as one of our engines. The difference is what happens to the rest of your file. DeepL doesn’t preserve PowerPoint layouts well, can’t simplify or summarize, and locks you into one engine. We keep your layout intact, let you switch between six engines per row, and add simplify, summarize, and refine on top of translation.",
+    a: "DeepL is excellent at the translation itself — we use it as one of our engines. The difference is what happens to the rest of your file. DeepL doesn’t preserve PowerPoint layouts well, can’t simplify or summarize, and locks you into one engine. We keep your layout intact, let you switch between six engines per row, and fold simplify, summarize, and refine into the same workflow.",
   },
   {
     q: "Can I share licenses with my team?",
