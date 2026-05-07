@@ -5,6 +5,7 @@ import SocialProofBar from "@/components/SocialProofBar";
 import TrustBadgesSection from "@/components/TrustBadgesSection";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
+import ProductTour from "@/components/ProductTour";
 import ProductsSection from "@/components/ProductsSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import UseCasesSection from "@/components/UseCasesSection";
@@ -28,6 +29,7 @@ export default function HomePage() {
         <TrustBadgesSection />
         <ProblemSection />
         <HowItWorks />
+        <ProductTour />
         <ProductsSection />
         <FeaturesGrid />
         <UseCasesSection />
