@@ -22,7 +22,7 @@ const tours: Tour[] = [
       "Drag in PowerPoint, Excel, Word, or PDF. Recent files appear inline. Pick a target language. That's the entire onboarding.",
     src: "/screenshots/inst-top.png",
     alt: "Insight Doc Translator top screen — drag-and-drop area for PPTX, Excel, Word, and PDF files",
-    width: 1489,
+    width: 1483,
     height: 936,
   },
   {
@@ -34,32 +34,32 @@ const tours: Tour[] = [
       "Source on the left, draft translation on the right, AI suggestions on the far right. Edit any segment, swap engines per row, accept or revise — all without leaving the Office layout.",
     src: "/screenshots/inst-pptx.png",
     alt: "PowerPoint translation workspace with side-by-side source, target, and AI suggestion panels",
-    width: 1513,
-    height: 1013,
+    width: 1456,
+    height: 985,
   },
   {
     product: "INST",
     productLabel: "Insight Doc Translator",
     productAccent: "text-rose-700 bg-rose-50 border-rose-200",
-    title: "Compare two finished files. Side by side.",
+    title: "Review the translation against the original.",
     caption:
-      "Open the source and the translated output as fully-rendered documents. Charts, tables, and brand fonts come through intact — exactly what your stakeholders will see.",
+      "PDFs render fully on the left, with the translation broken into segments on the right. Edit any segment in place, and apply changes back into a clean output PDF when you're done.",
     src: "/screenshots/inst-compare.png",
-    alt: "Side-by-side comparison of source PDF and translated PDF, both fully rendered with charts and tables intact",
-    width: 1484,
-    height: 936,
+    alt: "Insight Doc Translator reviewing a Standard Operating Procedure PDF with the translated segments alongside",
+    width: 1748,
+    height: 982,
   },
   {
     product: "INST",
     productLabel: "Insight Doc Translator",
     productAccent: "text-rose-700 bg-rose-50 border-rose-200",
-    title: "Run six engines at once. Pick the best.",
+    title: "Six engines. Configured once. Switch anytime.",
     caption:
-      "Multi-engine batch mode runs the same source through DeepL, Google, Azure, Claude, Gemini, and OpenAI in parallel. Compare the outputs and lock in the best draft per segment.",
+      "DeepL, Google, Azure, Claude, Gemini, and OpenAI — each with its own strengths, all in one panel. Drop in your API keys (BYOK), pick a default, and switch engines per file or per row whenever the content calls for it.",
     src: "/screenshots/inst-multi-engine.png",
-    alt: "Multi-engine batch processing dialog showing DeepL, Google, Azure, Claude, Gemini, and OpenAI running together",
-    width: 1485,
-    height: 929,
+    alt: "Translation Engines settings page showing DeepL, Google, Azure, Claude, Gemini, and OpenAI configured side by side",
+    width: 1806,
+    height: 927,
   },
   {
     product: "INMV",
@@ -70,20 +70,20 @@ const tours: Tour[] = [
       "Each slide becomes a scene. Notes become voice-over. Edit narration, switch voices, drop in BGM, set captions — everything in one editor, no video tool required.",
     src: "/screenshots/inmv-editor.png",
     alt: "Insight Training Studio editor with scene list, narration text, voice and subtitle controls",
-    width: 1286,
-    height: 935,
+    width: 1287,
+    height: 938,
   },
   {
     product: "INMV",
     productLabel: "Insight Training Studio",
     productAccent: "text-violet-700 bg-violet-50 border-violet-200",
-    title: "Preview before you export.",
+    title: "Pick your voice. Cloud, offline, or studio-grade.",
     caption:
-      "Play the whole training video inline before rendering. Timing, captions, narration pacing — all visible in real time. Export to MP4 once it's right.",
+      "Microsoft Neural TTS for everyday narration, VOICEVOX for studio-quality Japanese voices, Windows built-in for fully offline runs, or ElevenLabs for industry-best naturalness with voice cloning. Switch per scene.",
     src: "/screenshots/inmv-preview.png",
-    alt: "Inline video preview of an Insight Training Studio narrated training video with subtitles",
-    width: 1250,
-    height: 932,
+    alt: "Narrator Engine settings showing Microsoft Neural TTS, VOICEVOX, Windows built-in voice, and ElevenLabs as TTS options",
+    width: 1288,
+    height: 935,
   },
 ];
 
@@ -100,7 +100,7 @@ export default function ProductTour() {
             <span className="text-gradient-gold">Real translations.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Screenshots of the real app at work — captured live while a Tokyo team translates Japanese decks into English. (App UI is currently Japanese; English is shipping soon.)
+            Real screenshots of the actual app — captured while a Tokyo team translates Japanese decks into English. No mockups, no marketing illustrations. This is the real product.
           </p>
         </div>
 
