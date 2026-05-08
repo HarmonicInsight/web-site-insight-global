@@ -72,9 +72,9 @@ export default function StorySection() {
                       "We never see your files or text. The app talks directly to DeepL or OpenAI from your machine, with your own API key.",
                   },
                   {
-                    title: "Buy once. Keep it.",
+                    title: "One price. All features.",
                     body:
-                      "Lifetime per-device license, with one year of updates. No subscriptions to forget about.",
+                      "Annual per-device license. No upgrade tiers. No \"Plus\" or \"Pro\" upsells. The price is the price.",
                   },
                   {
                     title: "Layouts come through untouched",

@@ -90,7 +90,7 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   // Pricing — last
   {
     feature: "Annual price",
-    insight: { value: "$199 / year", note: "Lifetime license + 1y updates" },
+    insight: { value: "$199 / year", note: "Annual subscription · all updates included" },
     deepl: { value: "$108 / year", note: "Subscription" },
     chatgpt: { value: "$240 / year", note: "Plus plan" },
     copilot: { value: "$360 / year", note: "Requires MS 365" },

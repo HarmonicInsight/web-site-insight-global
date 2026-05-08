@@ -7,11 +7,11 @@ export default function PricingSection() {
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">Pricing</p>
           <h2 className="text-3xl md:text-5xl font-bold text-ink-900 leading-tight tracking-tight mb-5">
-            Buy once.{" "}
-            <span className="text-gradient-gold">Keep it.</span>
+            One price.{" "}
+            <span className="text-gradient-gold">All features.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            One-time purchase. One year of free updates. Use it forever. AI usage is billed by DeepL or OpenAI directly to you — never to us.
+            Annual license. No tiers, no upsells, no surprise charges. AI usage is billed by DeepL or OpenAI directly to you — never to us. Cancel anytime.
           </p>
         </div>
 

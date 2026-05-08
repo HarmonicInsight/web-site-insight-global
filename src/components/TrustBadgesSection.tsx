@@ -82,8 +82,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "Buy once. Keep it.",
-      caption: "Lifetime license, one year of updates",
+      title: "All features. One price.",
+      caption: "$199/year, $499/seat business — no tiers",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" strokeWidth="1.6" />
