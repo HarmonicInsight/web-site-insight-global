@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Earn 20% recurring commission on every HARMONIC insight customer you bring. 60-day cookie window. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
+    "Earn 20% recurring commission on every HARMONIC insight customer you bring. 30-day cookie window. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
   alternates: { canonical: "https://insightoffice.io/affiliates" },
 };
 
@@ -173,7 +173,7 @@ export default function AffiliatesPage() {
                 <span className="text-gradient-gold">you send our way.</span>
               </h1>
               <p className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mb-8">
-                Recurring commission. 60-day cookie. Industry-leading payout terms. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — everything ready the moment you&apos;re approved.
+                Recurring commission. 30-day cookie. Industry-leading payout terms. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — everything ready the moment you&apos;re approved.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
