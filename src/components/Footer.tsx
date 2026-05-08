@@ -78,6 +78,19 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="/brochures/insight-doc-translator-brochure.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-700 transition-colors inline-flex items-center gap-1.5"
+                >
+                  Brochure (PDF)
+                  <svg className="w-3 h-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://license.h-insight.jp/contact?site=insight-global"
                   target="_blank"
                   rel="noopener noreferrer"
