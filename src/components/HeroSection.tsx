@@ -1,3 +1,5 @@
+import HeroVideo from "@/components/HeroVideo";
+
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-20 pb-24 md:pt-28 md:pb-32 bg-hero-gradient">
@@ -120,23 +122,7 @@ export default function HeroSection() {
           className="relative mt-16 md:mt-20 max-w-5xl mx-auto opacity-0 animate-fade-in-up"
           style={{ animationDelay: "640ms" }}
         >
-          <div className="relative rounded-2xl overflow-hidden border border-ink-200 shadow-card bg-ink-900">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              preload="metadata"
-              poster="/video/insight-90s-poster.jpg"
-              className="w-full h-auto block"
-              aria-label="HARMONIC insight 90-second product overview"
-            >
-              <source src="/video/insight-90s-720p.mp4" type="video/mp4" media="(max-width: 768px)" />
-              <source src="/video/insight-90s-1080p.mp4" type="video/mp4" />
-              Your browser does not support video playback.
-            </video>
-          </div>
+          <HeroVideo />
           {/* Stats bar — kept beneath the video for at-a-glance proof points */}
           <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-ink-500">
             <span><strong className="text-ink-800">47</strong> languages</span>
