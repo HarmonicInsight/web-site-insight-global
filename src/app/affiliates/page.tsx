@@ -52,16 +52,30 @@ const STRATEGIC_DOCS = [
   },
 ];
 
-const BANNER_SIZES = [
-  { slug: "leaderboard-728x90",       name: "Leaderboard",         w: 728,  h: 90,   use: "Top of page" },
-  { slug: "medium-rectangle-300x250", name: "Medium Rectangle",    w: 300,  h: 250,  use: "Sidebar / in-content" },
-  { slug: "skyscraper-160x600",       name: "Wide Skyscraper",     w: 160,  h: 600,  use: "Sidebar tall" },
-  { slug: "mobile-320x100",           name: "Mobile Banner",       w: 320,  h: 100,  use: "Mobile sites" },
-  { slug: "billboard-970x250",        name: "Billboard",           w: 970,  h: 250,  use: "Premium top of page" },
-  { slug: "social-og-1200x628",       name: "Social Open Graph",   w: 1200, h: 628,  use: "Twitter/X · LinkedIn share" },
-  { slug: "instagram-1080x1080",      name: "Instagram Square",    w: 1080, h: 1080, use: "Instagram feed" },
-  { slug: "story-vertical-1080x1920", name: "Story / Vertical",    w: 1080, h: 1920, use: "Stories · TikTok · Reels" },
-] as const;
+const BANNER_SIZES: ReadonlyArray<{
+  slug: string;
+  name: string;
+  w: number;
+  h: number;
+  use: string;
+  variants: ReadonlyArray<"outcome" | "emotional" | "testimonial" | "comparison">;
+}> = [
+  { slug: "leaderboard-728x90",       name: "Leaderboard",         w: 728,  h: 90,   use: "Top of page",                variants: ["outcome", "emotional"] },
+  { slug: "medium-rectangle-300x250", name: "Medium Rectangle",    w: 300,  h: 250,  use: "Sidebar / in-content",       variants: ["outcome", "emotional"] },
+  { slug: "skyscraper-160x600",       name: "Wide Skyscraper",     w: 160,  h: 600,  use: "Sidebar tall",               variants: ["outcome", "emotional"] },
+  { slug: "mobile-320x100",           name: "Mobile Banner",       w: 320,  h: 100,  use: "Mobile sites",               variants: ["outcome", "emotional"] },
+  { slug: "billboard-970x250",        name: "Billboard",           w: 970,  h: 250,  use: "Premium top of page",        variants: ["outcome", "emotional", "testimonial", "comparison"] },
+  { slug: "social-og-1200x628",       name: "Social Open Graph",   w: 1200, h: 628,  use: "Twitter/X · LinkedIn share", variants: ["outcome", "emotional", "testimonial", "comparison"] },
+  { slug: "instagram-1080x1080",      name: "Instagram Square",    w: 1080, h: 1080, use: "Instagram feed",             variants: ["outcome", "emotional", "testimonial", "comparison"] },
+  { slug: "story-vertical-1080x1920", name: "Story / Vertical",    w: 1080, h: 1920, use: "Stories · TikTok · Reels",   variants: ["outcome", "emotional", "testimonial", "comparison"] },
+];
+
+const VARIANT_LABELS: Record<string, { label: string; angle: string; color: string }> = {
+  outcome:     { label: "Outcome",     angle: "Big numbers + benefit",            color: "bg-emerald-100 text-emerald-700 border-emerald-200" },
+  emotional:   { label: "Emotional",   angle: "Pain → relief",                    color: "bg-rose-100 text-rose-700 border-rose-200" },
+  testimonial: { label: "Testimonial", angle: "Composite quote with avatar",      color: "bg-violet-100 text-violet-700 border-violet-200" },
+  comparison:  { label: "Comparison",  angle: "vs DeepL / vs Synthesia framing",  color: "bg-amber-100 text-amber-700 border-amber-200" },
+};
 
 const PRODUCTS = [
   { code: "inst", name: "Insight Doc Translator", accent: "from-rose-500 to-fuchsia-500" },
@@ -310,60 +324,80 @@ export default function AffiliatesPage() {
               </a>
             </div>
 
-            {/* Banner ads gallery */}
+            {/* Banner ads gallery — 4 variants × 8 sizes × 2 products = 48 banners */}
             <div className="rounded-2xl bg-white border border-ink-100 overflow-hidden">
               <div className="px-6 py-5 border-b border-ink-100 bg-ink-50/50">
-                <h3 className="font-bold text-ink-900 mb-1">Banner ads — 8 sizes × 2 products</h3>
-                <p className="text-sm text-ink-500">
-                  Standard IAB sizes plus social formats. Click any banner to download the PNG.
+                <h3 className="font-bold text-ink-900 mb-1">Banner ads — 48 creatives, 4 marketing angles</h3>
+                <p className="text-sm text-ink-500 mb-3">
+                  Each size is available in up to four variants — pick the angle that matches your audience and channel. Click any banner to download the PNG.
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  {Object.entries(VARIANT_LABELS).map(([key, v]) => (
+                    <span key={key} className={`inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full border ${v.color}`}>
+                      <span className="font-bold">{v.label}</span>
+                      <span className="text-[10px] opacity-80">— {v.angle}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {PRODUCTS.map((product) => (
                 <div key={product.code} className="border-b border-ink-100 last:border-0">
-                  <div className="px-6 py-4 flex items-center gap-3 bg-ink-50/30">
+                  <div className="px-6 py-4 flex items-center gap-3 bg-ink-50/30 sticky top-0 z-10">
                     <span className={`inline-block w-2 h-6 rounded bg-gradient-to-b ${product.accent}`} />
                     <span className="font-bold text-ink-900 text-sm">{product.name}</span>
                     <span className="text-xs text-ink-400 uppercase tracking-widest">
                       {product.code}
                     </span>
                   </div>
-                  <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {BANNER_SIZES.map((b) => {
-                      const file = `${product.code}-${b.slug}.png`;
-                      const href = `/affiliate/banners/${file}`;
-                      return (
-                        <a
-                          key={file}
-                          href={href}
-                          download
-                          className="group rounded-xl border border-ink-100 hover:border-gold-300 bg-ink-50/30 hover:bg-gold-50/40 p-3 transition-colors"
-                        >
-                          <div className="rounded-md overflow-hidden bg-ink-900 mb-3 aspect-[4/3] flex items-center justify-center">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                              src={href}
-                              alt={`${product.name} ${b.name} ad`}
-                              className="max-w-full max-h-full object-contain"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div className="flex items-baseline justify-between mb-1">
-                            <span className="text-xs font-bold text-ink-900">{b.name}</span>
+                  <div className="p-6 space-y-6">
+                    {BANNER_SIZES.map((b) => (
+                      <div key={b.slug}>
+                        <div className="flex items-baseline justify-between mb-3 pb-2 border-b border-ink-100">
+                          <div className="flex items-baseline gap-3">
+                            <span className="font-bold text-ink-900 text-sm">{b.name}</span>
                             <span className="text-[10px] font-mono text-ink-400">
                               {b.w}×{b.h}
                             </span>
                           </div>
-                          <div className="flex items-center justify-between">
-                            <span className="text-[11px] text-ink-500">{b.use}</span>
-                            <span className="text-[11px] text-gold-700 group-hover:text-gold-900 inline-flex items-center gap-1 font-semibold">
-                              Download
-                              {DownloadIcon}
-                            </span>
-                          </div>
-                        </a>
-                      );
-                    })}
+                          <span className="text-[11px] text-ink-500">{b.use}</span>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                          {b.variants.map((variant) => {
+                            const file = `${product.code}-${b.slug}-${variant}.png`;
+                            const href = `/affiliate/banners/${file}`;
+                            const v = VARIANT_LABELS[variant];
+                            return (
+                              <a
+                                key={file}
+                                href={href}
+                                download
+                                className="group rounded-lg border border-ink-100 hover:border-gold-300 bg-ink-50/20 hover:bg-gold-50/30 p-2.5 transition-colors"
+                              >
+                                <div className="rounded-md overflow-hidden bg-ink-900 mb-2 aspect-[4/3] flex items-center justify-center">
+                                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                                  <img
+                                    src={href}
+                                    alt={`${product.name} ${b.name} ${v.label} ad`}
+                                    className="max-w-full max-h-full object-contain"
+                                    loading="lazy"
+                                  />
+                                </div>
+                                <div className="flex items-center justify-between gap-2">
+                                  <span className={`inline-block text-[10px] font-bold px-2 py-0.5 rounded border ${v.color}`}>
+                                    {v.label}
+                                  </span>
+                                  <span className="text-[10px] text-gold-700 group-hover:text-gold-900 inline-flex items-center gap-1 font-semibold">
+                                    Download
+                                    {DownloadIcon}
+                                  </span>
+                                </div>
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
