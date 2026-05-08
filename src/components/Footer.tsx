@@ -104,6 +104,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="/affiliates"
+                  className="hover:text-gold-700 transition-colors"
+                >
+                  Affiliate Program
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://license.h-insight.jp/contact?site=insight-global"
                   target="_blank"
                   rel="noopener noreferrer"
