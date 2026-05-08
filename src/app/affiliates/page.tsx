@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Earn 20% recurring commission on every HARMONIC insight customer you bring. 60-day cookie window. Free marketing assets and ready-to-use banner ads.",
+    "Earn 20% recurring commission on every HARMONIC insight customer you bring. 60-day cookie window. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
   alternates: { canonical: "https://insightoffice.io/affiliates" },
 };
 
@@ -15,6 +15,41 @@ const PROGRAM_HIGHLIGHTS = [
   { stat: "60 days", label: "cookie window", detail: "Industry-leading" },
   { stat: "$5K", label: "minimum payout", detail: "PayPal or Wise" },
   { stat: "48 h", label: "approval turnaround", detail: "Manual review" },
+];
+
+const STRATEGIC_DOCS = [
+  {
+    title: "Affiliate Playbook",
+    file: "affiliate-playbook.pdf",
+    size: "642 KB",
+    pages: "8 pages",
+    desc: "Strategic guide — target personas, messaging that works, do's and don'ts, tracking and payout details. Read this first.",
+    icon: "📘",
+  },
+  {
+    title: "Comparison brief — vs DeepL",
+    file: "comparison-deepl.pdf",
+    size: "129 KB",
+    pages: "1 page",
+    desc: "Drop-in attachment for emails or blog posts. Side-by-side comparison with the dominant translation incumbent.",
+    icon: "⚖️",
+  },
+  {
+    title: "Comparison brief — vs ChatGPT",
+    file: "comparison-chatgpt.pdf",
+    size: "126 KB",
+    pages: "1 page",
+    desc: "Same format, different competitor. Use when your audience defaults to ChatGPT for translation tasks.",
+    icon: "⚖️",
+  },
+  {
+    title: "Press Kit",
+    file: "press-kit.pdf",
+    size: "148 KB",
+    pages: "1 page",
+    desc: "About the company, quick facts, story angles, press contact. For journalists, podcast hosts, or tech reviewers.",
+    icon: "📰",
+  },
 ];
 
 const BANNER_SIZES = [
@@ -31,6 +66,21 @@ const BANNER_SIZES = [
 const PRODUCTS = [
   { code: "inst", name: "Insight Doc Translator", accent: "from-rose-500 to-fuchsia-500" },
   { code: "inmv", name: "Insight Training Studio", accent: "from-violet-500 to-indigo-500" },
+] as const;
+
+const VIDEOS = [
+  { file: "insight-90s-1080p.mp4", title: "Hero (full)",      ratio: "16:9", res: "1920×1080", duration: "60 s", size: "9.5 MB", use: "LP embed · YouTube" },
+  { file: "insight-90s-720p.mp4",  title: "Hero (mobile)",    ratio: "16:9", res: "1280×720",  duration: "60 s", size: "6.3 MB", use: "Mobile-fallback embed" },
+  { file: "insight-30s-1080p.mp4", title: "30-second cut",    ratio: "16:9", res: "1920×1080", duration: "30 s", size: "4.4 MB", use: "Paid ads · LinkedIn" },
+  { file: "insight-15s-teaser.mp4", title: "15-second teaser", ratio: "16:9", res: "1920×1080", duration: "15 s", size: "2.0 MB", use: "YouTube pre-roll" },
+  { file: "insight-90s-vertical.mp4", title: "Vertical (full)", ratio: "9:16", res: "1080×1920", duration: "60 s", size: "5.5 MB", use: "TikTok · Reels · Shorts" },
+  { file: "insight-30s-vertical.mp4", title: "Vertical (30s)",  ratio: "9:16", res: "1080×1920", duration: "30 s", size: "2.8 MB", use: "Stories · Shorts" },
+  { file: "insight-30s-square.mp4",   title: "Square 1:1",     ratio: "1:1",  res: "1080×1080", duration: "30 s", size: "2.8 MB", use: "Instagram feed" },
+] as const;
+
+const GIFS = [
+  { file: "hero-6s.gif", title: "Hero teaser",  duration: "6 s", size: "2.9 MB", use: "Twitter/X embed · email signature" },
+  { file: "inst-4s.gif", title: "INST teaser",  duration: "4 s", size: "1.7 MB", use: "Tight loop for ad creative" },
 ] as const;
 
 const COPY_SNIPPETS = [
@@ -81,6 +131,12 @@ const FAQS = [
   },
 ];
 
+const DownloadIcon = (
+  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+  </svg>
+);
+
 export default function AffiliatesPage() {
   const lsApply = "https://harmonic-insight.lemonsqueezy.com/affiliates";
 
@@ -103,7 +159,7 @@ export default function AffiliatesPage() {
                 <span className="text-gradient-gold">you send our way.</span>
               </h1>
               <p className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mb-8">
-                Recurring commission. 60-day cookie. Industry-leading payout terms. Free banner ads, brochures, copy, and brand assets — everything you need to start the moment you&apos;re approved.
+                Recurring commission. 60-day cookie. Industry-leading payout terms. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — everything ready the moment you&apos;re approved.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -117,7 +173,7 @@ export default function AffiliatesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </a>
-                <a href="#assets" className="btn-secondary px-7 py-3.5 text-base">
+                <a href="#playbook" className="btn-secondary px-7 py-3.5 text-base">
                   Browse the kit
                 </a>
               </div>
@@ -125,7 +181,7 @@ export default function AffiliatesPage() {
           </div>
         </section>
 
-        {/* Program highlights */}
+        {/* Highlights bar */}
         <section className="py-12 md:py-16 bg-white border-y border-ink-100">
           <div className="container-narrow">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
@@ -142,59 +198,116 @@ export default function AffiliatesPage() {
           </div>
         </section>
 
-        {/* Why our program */}
-        <section className="py-16 md:py-20">
+        {/* Strategic docs */}
+        <section id="playbook" className="py-16 md:py-20">
           <div className="container-narrow">
             <div className="max-w-3xl mb-10">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
-                Why this program is worth your time
+                Read first
               </p>
-              <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight">
-                Real product, real demand,{" "}
-                <span className="text-gradient-gold">real money on the table.</span>
+              <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
+                Strategic docs.{" "}
+                <span className="text-gradient-gold">Start with the playbook.</span>
               </h2>
+              <p className="text-base text-ink-500">
+                Eight-page strategic guide on positioning, target personas, messaging, and tracking. Plus comparison briefs and a press kit.
+              </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-5">
-              {[
-                {
-                  title: "Convert-friendly product",
-                  body:
-                    "30-day money-back guarantee, no subscription, BYOK keeps customer AI bills predictable. The objections affiliates usually hit don't apply here.",
-                },
-                {
-                  title: "Underserved category",
-                  body:
-                    "No competitor handles Word, Excel, PowerPoint, and PDF in one app with layout preservation. You're the first to tell your audience about it.",
-                },
-                {
-                  title: "Recurring revenue",
-                  body:
-                    "Annual licenses + business renewals. Your 20% commission keeps coming for as long as the customer keeps the license active.",
-                },
-              ].map((b) => (
-                <div key={b.title} className="p-6 rounded-2xl bg-white border border-ink-100">
-                  <h3 className="font-bold text-ink-900 mb-2">{b.title}</h3>
-                  <p className="text-sm text-ink-500 leading-relaxed">{b.body}</p>
-                </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              {STRATEGIC_DOCS.map((d) => (
+                <a
+                  key={d.file}
+                  href={`/affiliate/${d.file}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-2xl bg-white border border-ink-100 hover:border-gold-300 p-6 transition-colors flex gap-4"
+                >
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gold-50 flex items-center justify-center text-2xl">
+                    {d.icon}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-baseline justify-between gap-2 mb-1">
+                      <h3 className="font-bold text-ink-900">{d.title}</h3>
+                      <span className="text-[11px] text-ink-400 whitespace-nowrap">
+                        {d.pages} · {d.size}
+                      </span>
+                    </div>
+                    <p className="text-sm text-ink-500 leading-relaxed mb-3">{d.desc}</p>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700 group-hover:text-gold-900">
+                      Download PDF
+                      {DownloadIcon}
+                    </span>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Marketing assets */}
+        {/* Marketing assets — banners, brochures, brand kit */}
         <section id="assets" className="py-16 md:py-20 bg-ink-50/40 border-y border-ink-100">
           <div className="container-narrow">
             <div className="max-w-3xl mb-10">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
-                Ready-to-use assets
+                Visual assets
               </p>
               <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
-                Everything you need.{" "}
-                <span className="text-gradient-gold">Free, today.</span>
+                Banners, brochures,{" "}
+                <span className="text-gradient-gold">brand kit.</span>
               </h2>
               <p className="text-base text-ink-500">
-                Pick the asset, drop it into your blog, post, video, or ad. All assets follow the brand kit (gold + ink palette, Inter typography). Custom creative is welcome — these are starting points.
+                Pick the asset, drop it into your blog, post, video, or ad. All assets follow the brand kit. Custom creative is welcome — these are starting points.
               </p>
+            </div>
+
+            {/* Quick downloads */}
+            <div className="grid md:grid-cols-3 gap-5 mb-10">
+              <a
+                href="/affiliate/brand-kit.zip"
+                className="rounded-2xl bg-white border border-ink-100 hover:border-gold-300 p-6 transition-colors flex flex-col"
+              >
+                <div className="text-3xl mb-3">🎨</div>
+                <h3 className="font-bold text-ink-900 mb-2">Brand Kit ZIP</h3>
+                <p className="text-sm text-ink-500 leading-relaxed flex-1 mb-3">
+                  Logos (SVG + PNG, light/dark/mark-only), color palette, typography spec, brand voice guide.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700">
+                  Download ZIP (454 KB)
+                  {DownloadIcon}
+                </span>
+              </a>
+              <a
+                href="/brochures/insight-doc-translator-brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl bg-white border border-ink-100 hover:border-gold-300 p-6 transition-colors flex flex-col"
+              >
+                <div className="text-3xl mb-3">📄</div>
+                <h3 className="font-bold text-ink-900 mb-2">INST Brochure</h3>
+                <p className="text-sm text-ink-500 leading-relaxed flex-1 mb-3">
+                  One-page A4 brochure for Insight Doc Translator. Email-friendly, print-ready.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700">
+                  Download PDF (279 KB)
+                  {DownloadIcon}
+                </span>
+              </a>
+              <a
+                href="/brochures/insight-training-studio-brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl bg-white border border-ink-100 hover:border-gold-300 p-6 transition-colors flex flex-col"
+              >
+                <div className="text-3xl mb-3">📄</div>
+                <h3 className="font-bold text-ink-900 mb-2">INMV Brochure</h3>
+                <p className="text-sm text-ink-500 leading-relaxed flex-1 mb-3">
+                  One-page A4 brochure for Insight Training Studio. Same layout family as INST.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700">
+                  Download PDF (175 KB)
+                  {DownloadIcon}
+                </span>
+              </a>
             </div>
 
             {/* Banner ads gallery */}
@@ -202,16 +315,14 @@ export default function AffiliatesPage() {
               <div className="px-6 py-5 border-b border-ink-100 bg-ink-50/50">
                 <h3 className="font-bold text-ink-900 mb-1">Banner ads — 8 sizes × 2 products</h3>
                 <p className="text-sm text-ink-500">
-                  Standard IAB sizes plus social formats. Click any banner to download the PNG (transparent backgrounds available on request).
+                  Standard IAB sizes plus social formats. Click any banner to download the PNG.
                 </p>
               </div>
 
               {PRODUCTS.map((product) => (
                 <div key={product.code} className="border-b border-ink-100 last:border-0">
                   <div className="px-6 py-4 flex items-center gap-3 bg-ink-50/30">
-                    <span
-                      className={`inline-block w-2 h-6 rounded bg-gradient-to-b ${product.accent}`}
-                    />
+                    <span className={`inline-block w-2 h-6 rounded bg-gradient-to-b ${product.accent}`} />
                     <span className="font-bold text-ink-900 text-sm">{product.name}</span>
                     <span className="text-xs text-ink-400 uppercase tracking-widest">
                       {product.code}
@@ -247,9 +358,7 @@ export default function AffiliatesPage() {
                             <span className="text-[11px] text-ink-500">{b.use}</span>
                             <span className="text-[11px] text-gold-700 group-hover:text-gold-900 inline-flex items-center gap-1 font-semibold">
                               Download
-                              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                              </svg>
+                              {DownloadIcon}
                             </span>
                           </div>
                         </a>
@@ -259,61 +368,119 @@ export default function AffiliatesPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
 
-            {/* Other assets */}
-            <div className="grid md:grid-cols-2 gap-5 mt-6">
-              <div className="rounded-2xl bg-white border border-ink-100 p-6">
-                <h3 className="font-bold text-ink-900 mb-3">Brochures (PDF)</h3>
-                <p className="text-sm text-ink-500 leading-relaxed mb-4">
-                  One-page A4 brochures, ready to email, attach to a sales conversation, or hand out at events.
-                </p>
-                <ul className="space-y-2">
-                  <li>
-                    <a
-                      href="/brochures/insight-doc-translator-brochure.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-gold-700 hover:text-gold-900 font-semibold"
-                    >
-                      Insight Doc Translator (INST)
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/brochures/insight-training-studio-brochure.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-gold-700 hover:text-gold-900 font-semibold"
-                    >
-                      Insight Training Studio (INMV)
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl bg-white border border-ink-100 p-6">
-                <h3 className="font-bold text-ink-900 mb-3">Hero product video</h3>
-                <p className="text-sm text-ink-500 leading-relaxed mb-4">
-                  A 60-second product overview with English narration. Embed in YouTube, blog posts, or share natively on LinkedIn / X.
-                </p>
-                <a
-                  href="/video/insight-90s-1080p.mp4"
-                  download
-                  className="inline-flex items-center gap-2 text-sm text-gold-700 hover:text-gold-900 font-semibold"
-                >
-                  Download MP4 (1080p, 9.5 MB)
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                </a>
-              </div>
+        {/* Video library */}
+        <section className="py-16 md:py-20">
+          <div className="container-narrow">
+            <div className="max-w-3xl mb-10">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
+                Video library
+              </p>
+              <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
+                Every format,{" "}
+                <span className="text-gradient-gold">every platform.</span>
+              </h2>
+              <p className="text-base text-ink-500">
+                The hero video, plus 30s and 15s cuts, plus vertical 9:16 and square 1:1 — every format you might need across YouTube, TikTok, Reels, Shorts, Instagram, LinkedIn.
+              </p>
             </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {VIDEOS.map((v) => (
+                <a
+                  key={v.file}
+                  href={`/video/${v.file}`}
+                  download
+                  className="group rounded-xl border border-ink-100 hover:border-gold-300 bg-white p-5 transition-colors"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <span className="text-xs font-bold uppercase tracking-widest text-gold-700">
+                      {v.ratio}
+                    </span>
+                    <span className="text-[10px] font-mono text-ink-400">{v.res}</span>
+                  </div>
+                  <h3 className="font-bold text-ink-900 mb-1">{v.title}</h3>
+                  <div className="text-xs text-ink-500 mb-3">
+                    {v.duration} · {v.size}
+                  </div>
+                  <p className="text-xs text-ink-500 leading-relaxed mb-3">{v.use}</p>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700 group-hover:text-gold-900">
+                    Download MP4
+                    {DownloadIcon}
+                  </span>
+                </a>
+              ))}
+              {GIFS.map((g) => (
+                <a
+                  key={g.file}
+                  href={`/affiliate/teasers/${g.file}`}
+                  download
+                  className="group rounded-xl border border-ink-100 hover:border-gold-300 bg-white p-5 transition-colors"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <span className="text-xs font-bold uppercase tracking-widest text-gold-700">
+                      GIF
+                    </span>
+                    <span className="text-[10px] font-mono text-ink-400">looped</span>
+                  </div>
+                  <h3 className="font-bold text-ink-900 mb-1">{g.title}</h3>
+                  <div className="text-xs text-ink-500 mb-3">
+                    {g.duration} · {g.size}
+                  </div>
+                  <p className="text-xs text-ink-500 leading-relaxed mb-3">{g.use}</p>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700 group-hover:text-gold-900">
+                    Download GIF
+                    {DownloadIcon}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Email templates */}
+        <section className="py-16 md:py-20 bg-ink-50/40 border-y border-ink-100">
+          <div className="container-narrow">
+            <div className="max-w-3xl mb-10">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
+                Email sequence
+              </p>
+              <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
+                A 5-email drip,{" "}
+                <span className="text-gradient-gold">ready to send.</span>
+              </h2>
+              <p className="text-base text-ink-500">
+                Awareness → Education → Conversion → INMV cross-sell → Re-engagement. Subject line variants, full body copy, FTC-compliant disclosure language. Drop into ConvertKit / Mailchimp / Beehiiv / Substack.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              {[
+                { n: "01", t: "Awareness", d: "Day 0 · ~150 words", g: "Reader nods: \"this is my problem\"" },
+                { n: "02", t: "Education", d: "Day 1 · ~250 words", g: "Show the mechanism — they believe" },
+                { n: "03", t: "Conversion", d: "Day 2 · ~200 words", g: "Move from interested to decided" },
+                { n: "04", t: "INMV cross-sell", d: "Day 7 (engaged)", g: "Introduce second product" },
+                { n: "05", t: "Re-engage", d: "Day 30 (non-buyers)", g: "Soft re-open with new angle" },
+              ].map((e) => (
+                <div key={e.n} className="rounded-xl bg-white border border-ink-100 p-5">
+                  <div className="text-xs font-bold uppercase tracking-widest text-gold-700 mb-1">
+                    Email {e.n}
+                  </div>
+                  <h3 className="font-bold text-ink-900 mb-1">{e.t}</h3>
+                  <div className="text-xs text-ink-500 mb-3">{e.d}</div>
+                  <p className="text-xs text-ink-500 leading-relaxed">{e.g}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-ink-500 text-center">
+              Full templates available on request — email{" "}
+              <a href="mailto:affiliates@h-insight.jp" className="text-gold-700 underline">
+                affiliates@h-insight.jp
+              </a>{" "}
+              and we&apos;ll send a Markdown bundle within a business day.
+            </p>
           </div>
         </section>
 
@@ -325,11 +492,11 @@ export default function AffiliatesPage() {
                 Pre-written copy
               </p>
               <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
-                Copy you can post in{" "}
-                <span className="text-gradient-gold">under a minute.</span>
+                Three lengths,{" "}
+                <span className="text-gradient-gold">three channels.</span>
               </h2>
               <p className="text-base text-ink-500">
-                Three lengths, ready for the channel you publish on. Customize, attach a banner, add your tracking link, post.
+                Twitter/X, LinkedIn, blog. Customize, attach a banner, add your tracking link, post.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-5">
