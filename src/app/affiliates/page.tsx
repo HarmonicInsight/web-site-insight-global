@@ -19,9 +19,17 @@ const PROGRAM_HIGHLIGHTS = [
 
 const STRATEGIC_DOCS = [
   {
+    title: "Official Kit Bundle (ZIP)",
+    file: "kit-bundle.zip",
+    size: "ZIP",
+    pages: "13+ docs",
+    desc: "Source-of-truth bundle — media kit, comparison tables, 18-question FAQ, copy library, blog templates, YouTube scripts, social templates, onboarding emails. Markdown + PDF.",
+    icon: "🎁",
+  },
+  {
     title: "Affiliate Playbook",
     file: "affiliate-playbook.pdf",
-    size: "642 KB",
+    size: "636 KB",
     pages: "8 pages",
     desc: "Strategic guide — target personas, messaging that works, do's and don'ts, tracking and payout details. Read this first.",
     icon: "📘",
@@ -31,7 +39,7 @@ const STRATEGIC_DOCS = [
     file: "comparison-deepl.pdf",
     size: "129 KB",
     pages: "1 page",
-    desc: "Drop-in attachment for emails or blog posts. Side-by-side comparison with the dominant translation incumbent.",
+    desc: "Drop-in attachment for emails or blog posts. Side-by-side comparison with the dominant translation incumbent. (INST)",
     icon: "⚖️",
   },
   {
@@ -39,7 +47,15 @@ const STRATEGIC_DOCS = [
     file: "comparison-chatgpt.pdf",
     size: "126 KB",
     pages: "1 page",
-    desc: "Same format, different competitor. Use when your audience defaults to ChatGPT for translation tasks.",
+    desc: "Same format, different competitor. Use when your audience defaults to ChatGPT for translation tasks. (INST)",
+    icon: "⚖️",
+  },
+  {
+    title: "Comparison brief — vs Synthesia",
+    file: "comparison-synthesia.pdf",
+    size: "~130 KB",
+    pages: "1 page",
+    desc: "INMV-focused. Synthesia builds avatar videos; INMV turns slides into multilingual narrated videos. Different jobs, fair comparison. (INMV)",
     icon: "⚖️",
   },
   {
@@ -118,30 +134,113 @@ const COPY_SNIPPETS = [
   },
 ];
 
-const FAQS = [
+type FaqItem = { q: string; a: string };
+type FaqGroup = { heading: string; items: FaqItem[] };
+
+const FAQ_GROUPS: FaqGroup[] = [
   {
-    q: "Who can join?",
-    a: "Anyone with an audience that overlaps with knowledge workers handling multilingual Office documents — bloggers, YouTubers, newsletter writers, agency owners, course creators, consultants. We approve manually so we can keep the program quality high.",
+    heading: "A · Features & format",
+    items: [
+      {
+        q: "How's the translation quality? Better than DeepL?",
+        a: "You choose from 6 engines based on use case: DeepL (general docs, contracts), Claude/GPT (technical docs with jargon), Google/Azure (high-volume batches), Gemini (cost). Quality depends on which engine you pick. The strength isn't \"better than DeepL\" — it's that you get DeepL plus the ability to switch when needed.",
+      },
+      {
+        q: "Can it translate PDFs?",
+        a: "Yes — PDF is one of the four directly supported formats alongside PowerPoint, Word, and Excel. Layout, fonts, tables, and embedded objects are preserved across all four.",
+      },
+      {
+        q: "Does it work on Mac?",
+        a: "Currently Windows 10/11 64-bit. Mac is on the roadmap. In the meantime, Mac users can run it via Parallels or Boot Camp (works well in our testing).",
+      },
+      {
+        q: "Can I work offline?",
+        a: "First-time license activation requires online; after that, the app runs offline within the license window. If your engine of choice runs offline (e.g., VOICEVOX for TTS), you can have a fully offline workflow.",
+      },
+      {
+        q: "Can I cross-check translations across engines?",
+        a: "Yes. The Business plan supports side-by-side output from multiple engines. A common workflow: \"accept only the parts where DeepL and Claude agree\" for high-stakes docs.",
+      },
+    ],
   },
   {
-    q: "How does tracking work?",
-    a: "Lemon Squeezy handles affiliate tracking with first-party cookies and an explicit ?aff=YOUR_ID parameter. You'll get a dashboard with real-time stats and a tracking link generator. Exact cookie window and payout terms are set by Lemon Squeezy and visible from your affiliate dashboard.",
+    heading: "B · Security & privacy",
+    items: [
+      {
+        q: "My company forbids cloud translation. Can we use this?",
+        a: "This is exactly what we built it for. Zero data ever reaches HARMONIC insight servers. The translation engine sees your data only via your own API key, governed by your contract with that provider (DeepL Pro, Azure OpenAI Private, etc.). For maximum security, point Insight Doc Translator at an on-prem LLM in your tenant.",
+      },
+      {
+        q: "Can you issue tax-compliant invoices (VAT, US sales tax)?",
+        a: "Yes. Lemon Squeezy is the Merchant of Record and handles tax compliance globally — VAT in EU/UK, GST, US sales tax, JCT in Japan. Generate invoices anytime from the order confirmation link.",
+      },
+      {
+        q: "GDPR compliant?",
+        a: "Yes. Lemon Squeezy as MoR handles GDPR data processing terms for EU customers. The app itself never stores or transmits customer documents to our infrastructure.",
+      },
+      {
+        q: "What happens if a license key leaks?",
+        a: "Keys are bound to a device fingerprint. The same key on another device won't activate. The customer portal allows device resets within a fair-use limit.",
+      },
+    ],
   },
   {
-    q: "When do I get paid?",
-    a: "Payouts run through Lemon Squeezy on their schedule (PayPal or Wise). The 30-day money-back window applies, so confirmed commissions land after the refund period closes. Your dashboard always shows pending vs confirmed balances.",
+    heading: "C · Setup & operations",
+    items: [
+      {
+        q: "Is installation hard?",
+        a: "Three steps: download installer → launch → paste your key. Most IT review boards approve quickly because it's local-only with no data exfiltration risk.",
+      },
+      {
+        q: "We need multiple seats. Options?",
+        a: "Business plan adds seats by request (roughly half-price per additional seat). Enterprise contracts (10+ seats, site license, custom features): info@h-insight.jp.",
+      },
+      {
+        q: "Is there a free trial?",
+        a: "Yes — 30-day free trial with full feature access, no credit card required.",
+      },
+      {
+        q: "Easy to cancel?",
+        a: "One click in the customer portal stops the next renewal. You retain access through the current term. We don't pro-rate refunds, but we don't make you jump through hoops either.",
+      },
+    ],
   },
   {
-    q: "Can I run paid ads?",
-    a: "Yes, with two restrictions: (1) no bidding on our brand terms (HARMONIC insight, Insight Doc Translator, Insight Training Studio, insightoffice.io); (2) no fake urgency or false claims. Beyond that, you're free to run Google Ads, Meta, X, LinkedIn — anywhere.",
-  },
-  {
-    q: "Can I use my own creative?",
-    a: "Yes. The banner ads here are starting points. Custom creative is welcome — we just ask that brand assets (logo, color, name) follow the brand kit.",
-  },
-  {
-    q: "Do you offer co-marketing?",
-    a: "Yes. If you have an audience of 5,000+ subscribers/followers in localization, SaaS-tools, or AI productivity, reach out — we can do guest posts, joint webinars, or exclusive discount codes for your audience.",
+    heading: "D · Sales & affiliate",
+    items: [
+      {
+        q: "Who can join?",
+        a: "Anyone with an audience that overlaps with knowledge workers handling multilingual Office documents — bloggers, YouTubers, newsletter writers, agency owners, course creators, consultants. We approve manually to keep program quality high.",
+      },
+      {
+        q: "Is the commission recurring?",
+        a: "Yes. 20% on every annual renewal for as long as the customer stays subscribed. Personal: ~$39.80/yr per customer. Business: ~$99.80/yr per customer. That builds.",
+      },
+      {
+        q: "How does tracking and payout work?",
+        a: "Lemon Squeezy handles affiliate tracking with first-party cookies and an explicit ?aff=YOUR_ID parameter. Real-time dashboard with click count, signups, conversions, and refund-adjusted commissions. Payouts via PayPal or Wise on Lemon Squeezy's schedule.",
+      },
+      {
+        q: "Can I run paid ads?",
+        a: "Yes, with two restrictions: (1) no bidding on our brand terms (HARMONIC insight, Insight Doc Translator, Insight Training Studio, insightoffice.io); (2) no fake urgency or false claims. Beyond that — Google, Meta, X, LinkedIn — go for it.",
+      },
+      {
+        q: "Can I self-purchase to earn my own commission?",
+        a: "Self-purchase voids commission per program terms. If you need a license to demo or review, email info@h-insight.jp — we issue free reviewer licenses.",
+      },
+      {
+        q: "Can I get a custom discount code?",
+        a: "Yes. After approval, we issue codes like YT_YOURNAME10 for 10% off. The discount doesn't reduce your 20% commission — we cover the gap.",
+      },
+      {
+        q: "Can I review competing products too?",
+        a: "Absolutely. Honest comparisons earn audience trust, which is what we want. Use the comparison briefs in the kit (vs DeepL / vs ChatGPT / vs Synthesia) for fair feature breakdowns.",
+      },
+      {
+        q: "Do you offer co-marketing?",
+        a: "Yes. If you have an audience of 5,000+ in localization, SaaS-tools, or AI productivity, reach out — we can do guest posts, joint webinars, or exclusive discount codes for your audience.",
+      },
+    ],
   },
 ];
 
@@ -562,31 +661,40 @@ export default function AffiliatesPage() {
                 FAQ
               </p>
               <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight text-center mb-10">
-                Questions, answered{" "}
+                18 questions, answered{" "}
                 <span className="text-gradient-gold">honestly.</span>
               </h2>
-              <div className="space-y-3">
-                {FAQS.map((f) => (
-                  <details
-                    key={f.q}
-                    className="group rounded-xl bg-white border border-ink-100 hover:border-gold-200 p-5 [&[open]]:border-gold-300"
-                  >
-                    <summary className="flex items-center justify-between cursor-pointer list-none">
-                      <span className="text-base font-semibold text-ink-900 pr-4">{f.q}</span>
-                      <span className="flex-shrink-0 w-7 h-7 rounded-full bg-ink-50 group-hover:bg-gold-100 flex items-center justify-center transition-colors">
-                        <svg
-                          className="w-4 h-4 text-ink-500 transition-transform group-open:rotate-180"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2.5}
+              <div className="space-y-8">
+                {FAQ_GROUPS.map((group) => (
+                  <div key={group.heading}>
+                    <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold-700 mb-3">
+                      {group.heading}
+                    </h3>
+                    <div className="space-y-3">
+                      {group.items.map((f) => (
+                        <details
+                          key={f.q}
+                          className="group rounded-xl bg-white border border-ink-100 hover:border-gold-200 p-5 [&[open]]:border-gold-300"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </span>
-                    </summary>
-                    <div className="mt-4 text-sm text-ink-500 leading-relaxed">{f.a}</div>
-                  </details>
+                          <summary className="flex items-center justify-between cursor-pointer list-none">
+                            <span className="text-base font-semibold text-ink-900 pr-4">{f.q}</span>
+                            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-ink-50 group-hover:bg-gold-100 flex items-center justify-center transition-colors">
+                              <svg
+                                className="w-4 h-4 text-ink-500 transition-transform group-open:rotate-180"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2.5}
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </span>
+                          </summary>
+                          <div className="mt-4 text-sm text-ink-500 leading-relaxed">{f.a}</div>
+                        </details>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
