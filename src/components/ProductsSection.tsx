@@ -79,22 +79,24 @@ export default function ProductsSection() {
                   </a>
                 </div>
 
-                {/* Brochure download (INST only — INMV English brochure pending) */}
-                {product.code === "INST" && (
-                  <div className="mt-3 text-center">
-                    <a
-                      href="/brochures/insight-doc-translator-brochure.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs text-ink-400 hover:text-gold-700 transition-colors"
-                    >
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m-6-8h6m4 12H5a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v9a2 2 0 01-2 2z" />
-                      </svg>
-                      Download one-page brochure (PDF)
-                    </a>
-                  </div>
-                )}
+                {/* Brochure download */}
+                <div className="mt-3 text-center">
+                  <a
+                    href={
+                      product.code === "INST"
+                        ? "/brochures/insight-doc-translator-brochure.pdf"
+                        : "/brochures/insight-training-studio-brochure.pdf"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-ink-400 hover:text-gold-700 transition-colors"
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m-6-8h6m4 12H5a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v9a2 2 0 01-2 2z" />
+                    </svg>
+                    Download one-page brochure (PDF)
+                  </a>
+                </div>
 
                 {/* Best for */}
                 <div className="mt-6 pt-6 border-t border-ink-100">
