@@ -51,7 +51,7 @@ export default function StorySection() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">HARMONIC insight team</div>
-                  <div className="text-sm text-ink-400">Tokyo, Japan · est. 2024</div>
+                  <div className="text-sm text-ink-400">Tokyo, Japan · est. August 2025</div>
                 </div>
               </div>
             </div>

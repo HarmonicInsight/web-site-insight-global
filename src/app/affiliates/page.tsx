@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 const PROGRAM_HIGHLIGHTS = [
   { stat: "20%", label: "commission on every sale", detail: "Recurring on renewals" },
-  { stat: "60 days", label: "cookie window", detail: "Industry-leading" },
-  { stat: "$5K", label: "minimum payout", detail: "PayPal or Wise" },
+  { stat: "30-day", label: "free trial", detail: "No credit card required" },
+  { stat: "Lemon Squeezy", label: "tracking & payout", detail: "PayPal or Wise" },
   { stat: "48 h", label: "approval turnaround", detail: "Manual review" },
 ];
 
@@ -125,11 +125,11 @@ const FAQS = [
   },
   {
     q: "How does tracking work?",
-    a: "Lemon Squeezy handles affiliate tracking with first-party cookies and an explicit ?aff=YOUR_ID parameter. Cookie window is 60 days from first click. You'll get a dashboard with real-time stats and a tracking link generator.",
+    a: "Lemon Squeezy handles affiliate tracking with first-party cookies and an explicit ?aff=YOUR_ID parameter. You'll get a dashboard with real-time stats and a tracking link generator. Exact cookie window and payout terms are set by Lemon Squeezy and visible from your affiliate dashboard.",
   },
   {
     q: "When do I get paid?",
-    a: "Lemon Squeezy pays out monthly via PayPal or Wise once your balance crosses $5,000 worth of confirmed (non-refunded) sales. The 30-day money-back window means there's a brief delay between sale and confirmed commission.",
+    a: "Payouts run through Lemon Squeezy on their schedule (PayPal or Wise). The 30-day money-back window applies, so confirmed commissions land after the refund period closes. Your dashboard always shows pending vs confirmed balances.",
   },
   {
     q: "Can I run paid ads?",
