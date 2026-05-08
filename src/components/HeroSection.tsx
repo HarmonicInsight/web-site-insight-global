@@ -115,44 +115,35 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* Visual mockup hint */}
+        {/* Hero video */}
         <div
           className="relative mt-16 md:mt-20 max-w-5xl mx-auto opacity-0 animate-fade-in-up"
           style={{ animationDelay: "640ms" }}
         >
-          <div className="relative rounded-2xl overflow-hidden border border-ink-200 shadow-card bg-white">
-            {/* Window chrome */}
-            <div className="flex items-center gap-1.5 px-4 py-3 border-b border-ink-100 bg-ink-50">
-              <span className="w-3 h-3 rounded-full bg-rose-400" />
-              <span className="w-3 h-3 rounded-full bg-amber-400" />
-              <span className="w-3 h-3 rounded-full bg-emerald-400" />
-              <span className="ml-3 text-xs font-mono text-ink-400">Insight Doc Translator — quarterly_report.pptx</span>
-            </div>
-            {/* Body */}
-            <div className="p-6 md:p-10 grid md:grid-cols-2 gap-6">
-              {/* Source */}
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-ink-400 mb-2">Source · English</div>
-                <div className="rounded-lg bg-ink-50 p-4 text-sm text-ink-700 leading-relaxed">
-                  Q4 revenue grew 23% year-over-year, driven primarily by enterprise software licensing. The acquisition of Northstar Analytics added $4.2M in recurring revenue.
-                </div>
-              </div>
-              {/* Target */}
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-gold-600 mb-2">Translated · 日本語</div>
-                <div className="rounded-lg bg-gold-50 p-4 text-sm text-ink-800 leading-relaxed border border-gold-200">
-                  第4四半期の売上は前年同期比23%増加し、主にエンタープライズソフトウェアのライセンス販売が牽引しました。Northstar Analytics買収により、420万ドルの定期収益が加算されました。
-                </div>
-              </div>
-            </div>
-            {/* Stats bar */}
-            <div className="px-6 md:px-10 py-4 border-t border-ink-100 bg-ink-50/50 flex flex-wrap gap-x-6 gap-y-2 text-xs text-ink-500">
-              <span><strong className="text-ink-800">47</strong> languages</span>
-              <span><strong className="text-ink-800">6</strong> AI engines</span>
-              <span><strong className="text-ink-800">4</strong> formats (PPTX, PDF, DOCX, XLSX)</span>
-              <span><strong className="text-ink-800">100%</strong> layout preserved</span>
-              <span><strong className="text-ink-800">0</strong> cloud upload</span>
-            </div>
+          <div className="relative rounded-2xl overflow-hidden border border-ink-200 shadow-card bg-ink-900">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+              poster="/video/insight-90s-poster.jpg"
+              className="w-full h-auto block"
+              aria-label="HARMONIC insight 90-second product overview"
+            >
+              <source src="/video/insight-90s-720p.mp4" type="video/mp4" media="(max-width: 768px)" />
+              <source src="/video/insight-90s-1080p.mp4" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
+          </div>
+          {/* Stats bar — kept beneath the video for at-a-glance proof points */}
+          <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-ink-500">
+            <span><strong className="text-ink-800">47</strong> languages</span>
+            <span><strong className="text-ink-800">6</strong> AI engines</span>
+            <span><strong className="text-ink-800">4</strong> formats (PPTX, PDF, DOCX, XLSX)</span>
+            <span><strong className="text-ink-800">100%</strong> layout preserved</span>
+            <span><strong className="text-ink-800">0</strong> cloud upload</span>
           </div>
         </div>
       </div>
