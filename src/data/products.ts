@@ -83,7 +83,7 @@ export const products: Product[] = [
       { title: "Pro-quality output", desc: "Auto subtitles, BGM library, eight transitions, AI thumbnails, watermarks, step capture — all built in." },
       { title: "MP4 / WAV / MP3 export", desc: "Standard formats that play anywhere. Up to 1080p video, broadcast-quality audio." },
       { title: "Local processing", desc: "Your slides, narration, screen recordings, and source files stay on your PC. No cloud upload, no third-party retention." },
-      { title: "Two-wipe overlay (presenter + sign-language ready)", desc: "Two simultaneous picture-in-picture tracks for presenter video, branded watermarks, or sign-language interpreter. Built-in support for EAA / ADA / 障害者差別解消法 when you need it." },
+      { title: "Picture-in-picture overlay", desc: "Drop in a presenter video, branded watermark, or sign-language interpreter — your call. Built-in accessibility support when you need it, no extra editing pipeline." },
     ],
     bestFor: [
       "L&D and corporate training teams turning PowerPoint backlogs into video courses",
