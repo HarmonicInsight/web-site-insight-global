@@ -72,6 +72,30 @@ export default function UseCasesSection() {
       border: "border-indigo-200",
       accent: "text-indigo-700",
     },
+    {
+      industry: "L&D / Corporate Training",
+      icon: "🎬",
+      headline: "Turn your PowerPoint backlog into a multilingual video library",
+      description:
+        "Speaker notes become AI narration. The same source deck ships in 47 languages, no re-recording. New hires onboard faster — without the studio fee.",
+      stat: "5 min",
+      statLabel: "deck → finished MP4",
+      gradient: "from-fuchsia-500/10 to-purple-500/10",
+      border: "border-fuchsia-200",
+      accent: "text-fuchsia-700",
+    },
+    {
+      industry: "Tech Writers & SaaS DevRel",
+      icon: "🛠️",
+      headline: "Screen recording in. Documented tutorial out.",
+      description:
+        "Capture the workflow once. AI converts it to step-by-step slides with auto-narration. Onboarding manuals, IT how-tos, product walkthroughs — without the deck-building afternoon.",
+      stat: "1 capture",
+      statLabel: "→ slides + narration + manual",
+      gradient: "from-purple-500/10 to-violet-500/10",
+      border: "border-purple-200",
+      accent: "text-purple-700",
+    },
   ];
 
   return (

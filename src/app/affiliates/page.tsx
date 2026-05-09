@@ -6,15 +6,46 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Founding Affiliate program — earn 30% recurring commission on every HARMONIC insight customer you bring. First 50 affiliates lock in 30% for life. Tracking, attribution, and payout via Lemon Squeezy. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
+    "Earn 20% recurring commission on every HARMONIC insight annual subscription. Annual subscriptions ($199–$499) keep paying year after year. Lemon Squeezy handles tracking, attribution, and payout. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — ready the moment you're approved.",
   alternates: { canonical: "https://insightoffice.io/affiliates" },
 };
 
 const PROGRAM_HIGHLIGHTS = [
-  { stat: "20%", label: "commission on every sale", detail: "Recurring on renewals" },
-  { stat: "30-day", label: "free trial", detail: "No credit card required" },
-  { stat: "Lemon Squeezy", label: "tracking & payout", detail: "PayPal or Wise" },
-  { stat: "48 h", label: "approval turnaround", detail: "Manual review" },
+  { stat: "20%", label: "recurring commission", detail: "Pays on every annual renewal — year after year" },
+  { stat: "$199–$499", label: "average order value", detail: "Annual subscription, not a one-shot sale" },
+  { stat: "$300B+", label: "total addressable market", detail: "Translation + e-learning combined (Statista, 2024)" },
+  { stat: "30-day", label: "no-card free trial", detail: "Removes the biggest signup objection" },
+];
+
+const ECONOMICS_CARDS = [
+  {
+    icon: "💰",
+    title: "Annual subscriptions, not one-shot sales",
+    desc: "$199 Personal · $499 Business — paid every year. Your 20% pays out year one, year two, year three, and beyond.",
+    accent: "text-emerald-700",
+    bg: "bg-emerald-50/40 border-emerald-200",
+  },
+  {
+    icon: "📈",
+    title: "High AOV vs typical SaaS affiliate",
+    desc: "$60–$100 commission per Business sale. Most productivity SaaS pay $5–$15 per monthly conversion. The math is simply better.",
+    accent: "text-fuchsia-700",
+    bg: "bg-fuchsia-50/40 border-fuchsia-200",
+  },
+  {
+    icon: "🌍",
+    title: "Cross-border audience, not a niche",
+    desc: "Anyone who handles multilingual Office files, training videos, onboarding decks, or technical manuals is in scope. That's most knowledge workers.",
+    accent: "text-violet-700",
+    bg: "bg-violet-50/40 border-violet-200",
+  },
+  {
+    icon: "🎁",
+    title: "Plug-and-play kit. No creative work needed.",
+    desc: "48 banners, brochures, comparison briefs, video clips in every format, copy library, email drips, brand assets — all approved, all ready, all free.",
+    accent: "text-amber-700",
+    bg: "bg-amber-50/40 border-amber-200",
+  },
 ];
 
 const STRATEGIC_DOCS = [
@@ -269,11 +300,11 @@ export default function AffiliatesPage() {
                 Affiliate Program
               </p>
               <h1 className="text-4xl md:text-6xl font-bold text-ink-900 leading-[1.05] tracking-tight mb-6">
-                Earn 20% on every customer{" "}
-                <span className="text-gradient-gold">you send our way.</span>
+                Earn 20% recurring on every{" "}
+                <span className="text-gradient-gold">annual subscription.</span>
               </h1>
               <p className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mb-8">
-                Recurring commission on every annual renewal. Lemon Squeezy handles tracking, attribution, and payout. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — everything ready the moment you&apos;re approved.
+                Annual orders run <strong className="text-ink-800">$199 to $499</strong>. The commission pays out every renewal, year after year. A complete marketing kit — banners, brochures, comparison briefs, video clips, copy library, email drip — is ready the moment you&apos;re approved. No creative lift required.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -308,6 +339,74 @@ export default function AffiliatesPage() {
                   <div className="text-xs text-ink-500">{h.detail}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why this converts — affiliate economics */}
+        <section className="py-16 md:py-20 bg-ink-50/40 border-b border-ink-100">
+          <div className="container-narrow">
+            <div className="max-w-3xl mb-10">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
+                Why this converts
+              </p>
+              <h2 className="text-2xl md:text-4xl font-bold text-ink-900 leading-tight tracking-tight mb-3">
+                Built for serious affiliates,{" "}
+                <span className="text-gradient-gold">not coupon hunters.</span>
+              </h2>
+              <p className="text-base text-ink-500">
+                Annual subscriptions instead of one-shot sales. High average order value. A market every knowledge-worker audience touches. And a kit that does the creative work for you — so the only thing you have to bring is reach.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {ECONOMICS_CARDS.map((c) => (
+                <div
+                  key={c.title}
+                  className={`relative rounded-2xl border ${c.bg} p-6 transition-all hover:-translate-y-1 hover:shadow-card`}
+                >
+                  <div className="text-3xl mb-3">{c.icon}</div>
+                  <h3 className={`text-base font-bold mb-2 ${c.accent}`}>{c.title}</h3>
+                  <p className="text-sm text-ink-600 leading-relaxed">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Concrete sales math */}
+            <div className="mt-10 rounded-2xl bg-white border border-ink-100 p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <div className="hidden md:flex flex-shrink-0 w-12 h-12 rounded-xl bg-gold-100 items-center justify-center text-2xl">
+                  🧮
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-ink-900 mb-3">The math, on the back of an envelope</h3>
+                  <div className="grid sm:grid-cols-3 gap-4 text-sm">
+                    <div className="rounded-lg bg-ink-50/60 p-4">
+                      <div className="text-xs font-bold uppercase tracking-widest text-ink-400 mb-1">
+                        10 Personal sales
+                      </div>
+                      <div className="text-lg font-bold text-ink-900 mb-1">~$398/year</div>
+                      <div className="text-xs text-ink-500">10 × $199 × 20% — recurring</div>
+                    </div>
+                    <div className="rounded-lg bg-gold-50/60 p-4 border border-gold-200">
+                      <div className="text-xs font-bold uppercase tracking-widest text-gold-700 mb-1">
+                        10 Business sales
+                      </div>
+                      <div className="text-lg font-bold text-ink-900 mb-1">~$998/year</div>
+                      <div className="text-xs text-ink-500">10 × $499 × 20% — recurring</div>
+                    </div>
+                    <div className="rounded-lg bg-emerald-50/60 p-4 border border-emerald-200">
+                      <div className="text-xs font-bold uppercase tracking-widest text-emerald-700 mb-1">
+                        Mixed audience
+                      </div>
+                      <div className="text-lg font-bold text-ink-900 mb-1">~$1,400/year</div>
+                      <div className="text-xs text-ink-500">Per 20 customers, year over year</div>
+                    </div>
+                  </div>
+                  <p className="text-xs text-ink-500 mt-4 leading-relaxed">
+                    Most productivity SaaS affiliate programs pay $5–$15 per <em>monthly</em> conversion that churns in three months. We pay $40–$100 per <em>annual</em> conversion that renews. The unit economics are what make it work.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
