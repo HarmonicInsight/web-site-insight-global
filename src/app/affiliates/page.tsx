@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Earn 20% recurring commission on every HARMONIC insight customer you bring. Tracking, attribution, and payout via Lemon Squeezy. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
+    "Founding Affiliate program — earn 30% recurring commission on every HARMONIC insight customer you bring. First 50 affiliates lock in 30% for life. Tracking, attribution, and payout via Lemon Squeezy. Free marketing assets — banners, brochures, video formats, comparison briefs, brand kit, and a strategic playbook.",
   alternates: { canonical: "https://insightoffice.io/affiliates" },
 };
 

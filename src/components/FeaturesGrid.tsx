@@ -53,6 +53,24 @@ const features = [
     title: "Glossary + translation memory",
     desc: "CAT-tool features in a drag-and-drop UI. CSV/Excel import, DeepL Glossary sync, TMX standard. Glossary violations are flagged automatically as a QA pass.",
   },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+      </svg>
+    ),
+    title: "Audio-first video workflow (INMV)",
+    desc: "Generate the narration as a WAV first, then build matching slides or wipe footage to fit. Pro-grade flexibility for studio-style production — without leaving the app.",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+      </svg>
+    ),
+    title: "Sign-language ready (INMV)",
+    desc: "Two simultaneous picture-in-picture wipes. Drop in a sign-language interpreter, a presenter overlay, or both — at once. Built-in accessibility for EAA / ADA / 障害者差別解消法 compliance.",
+  },
 ];
 
 export default function FeaturesGrid() {
