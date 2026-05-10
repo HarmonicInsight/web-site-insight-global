@@ -290,8 +290,33 @@ export default function AffiliatesPage() {
       <FamilyBar />
       <Header />
       <main className="pb-16">
+        {/* Umbrella context bar */}
+        <section className="bg-ink-50/60 border-b border-ink-100 pt-20 md:pt-24">
+          <div className="container-narrow py-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-sm">
+              <div className="flex items-center gap-3">
+                <span className="inline-block bg-ink-900 text-gold-300 text-[10px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded">
+                  Partner Program
+                </span>
+                <span className="font-semibold text-ink-800">Track A · Affiliate</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-ink-500">
+                <span>
+                  Looking for the B2B reseller route?{" "}
+                  <a href="https://h-insight.jp/en/partners/reseller" target="_blank" rel="noopener noreferrer" className="underline text-gold-700 hover:text-gold-900 font-medium">
+                    Reseller Program
+                  </a>
+                </span>
+                <a href="https://h-insight.jp/en/partners" target="_blank" rel="noopener noreferrer" className="text-gold-700 hover:text-gold-900 font-semibold whitespace-nowrap">
+                  Full Partner Program →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Hero */}
-        <section className="relative bg-hero-gradient overflow-hidden pt-16 pb-20 md:pt-20 md:pb-24">
+        <section className="relative bg-hero-gradient overflow-hidden pt-12 pb-20 md:pt-16 md:pb-24">
           <div className="hero-blob bg-gold-300 -top-40 -right-40" />
           <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
           <div className="container-narrow relative">

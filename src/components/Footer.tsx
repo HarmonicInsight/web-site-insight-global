@@ -112,6 +112,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://h-insight.jp/en/partners/reseller"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-700 transition-colors"
+                >
+                  Reseller Program ↗
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://license.h-insight.jp/contact?site=insight-global"
                   target="_blank"
                   rel="noopener noreferrer"
