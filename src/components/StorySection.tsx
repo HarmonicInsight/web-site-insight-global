@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function StorySection() {
   return (
     <section id="story" className="py-20 md:py-28 bg-ink-900 text-white relative overflow-hidden">
@@ -46,11 +48,17 @@ export default function StorySection() {
             {/* Signature-style attribution */}
             <div className="mt-10 pt-8 border-t border-white/10">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-ink-900 font-bold text-lg">
-                  H
+                <div className="relative w-14 h-14 rounded-full overflow-hidden ring-2 ring-gold-400/40 flex-shrink-0">
+                  <Image
+                    src="/about/erik-arthur.png"
+                    alt="HARMONIC insight founder"
+                    fill
+                    sizes="56px"
+                    className="object-cover"
+                  />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">HARMONIC insight team</div>
+                  <div className="font-semibold text-white">Founder, HARMONIC insight</div>
                   <div className="text-sm text-ink-400">Tokyo, Japan · est. August 2025</div>
                 </div>
               </div>

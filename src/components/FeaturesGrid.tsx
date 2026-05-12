@@ -42,8 +42,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
       </svg>
     ),
-    title: "47-language AI narration (INMV)",
-    desc: "Same source deck, every language. Edge Neural TTS delivers near-human voices for global onboarding and training rollouts — without re-recording.",
+    title: "Three ways to add narration (INMV)",
+    desc: "AI voice in 47 languages, record your own voice in-app per scene, or import existing WAV/MP3. Mix and match within one video — founder message in real voice, the rest in AI. No competitor allows this.",
   },
   {
     icon: (
@@ -98,6 +98,15 @@ const features = [
     ),
     title: "Picture-in-picture overlay (INMV)",
     desc: "Drop in a presenter video, branded watermark, or sign-language interpreter. One overlay slot, fully positionable. Accessibility-ready when you need it — no separate editing pipeline.",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+      </svg>
+    ),
+    title: "SCORM 1.2 LMS export (INMV)",
+    desc: "Drop your training video straight into Moodle, TalentLMS, Cornerstone, or any SCORM 1.2 LMS. Resume bookmark, review-mode protection, and pass-through completion built in. Verified with Moodle and SCORM Cloud (Rustici).",
   },
 ];
 

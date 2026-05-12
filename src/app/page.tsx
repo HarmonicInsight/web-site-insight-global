@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import SocialProofBar from "@/components/SocialProofBar";
 import TrustBadgesSection from "@/components/TrustBadgesSection";
 import ProblemSection from "@/components/ProblemSection";
+import DualEntrySection from "@/components/DualEntrySection";
 import HowItWorks from "@/components/HowItWorks";
 import ProductTour from "@/components/ProductTour";
 import ProductsSection from "@/components/ProductsSection";
@@ -28,6 +29,7 @@ export default function HomePage() {
         <SocialProofBar />
         <TrustBadgesSection />
         <ProblemSection />
+        <DualEntrySection />
         <HowItWorks />
         <ProductTour />
         <ProductsSection />
