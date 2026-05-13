@@ -56,8 +56,8 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
     feature: "Number of languages",
     insight: { value: "47" },
     deepl: { value: "33" },
-    chatgpt: { value: "100+", note: "Lead" },
-    copilot: { value: "100+", note: "Lead" },
+    chatgpt: { value: "Wide", note: "General LLM" },
+    copilot: { value: "Wide", note: "General LLM" },
   },
   {
     feature: "Raw translation quality (linguistic only)",
