@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { products, getCheckoutUrl, getTrialUrl } from "@/data/products";
+import { getLatestVersion } from "@/data/releases";
 
 export default function ProductsSection() {
   return (
@@ -37,7 +39,23 @@ export default function ProductsSection() {
 
                 {/* Name */}
                 <h3 className="text-2xl font-bold text-ink-900 mb-2 tracking-tight">{product.name}</h3>
-                <p className="text-base text-ink-500 mb-6 leading-relaxed">{product.tagline}</p>
+                <p className="text-base text-ink-500 mb-3 leading-relaxed">{product.tagline}</p>
+
+                {/* Latest release badge */}
+                {(() => {
+                  const latest = getLatestVersion(product.code);
+                  if (!latest) return null;
+                  return (
+                    <Link
+                      href="/releases"
+                      className="inline-flex items-center gap-2 text-xs font-semibold text-ink-500 hover:text-gold-700 mb-6 transition-colors"
+                    >
+                      <span className="inline-flex items-center justify-center w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      Latest release · v{latest.version} <span className="text-ink-400">({latest.releaseDate})</span>
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  );
+                })()}
 
                 {/* Description */}
                 <p className="text-sm text-ink-600 leading-relaxed mb-8">{product.description}</p>
