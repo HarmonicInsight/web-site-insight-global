@@ -33,7 +33,7 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
       </svg>
     ),
-    title: "PowerPoint → MP4 in five minutes (INMV)",
+    title: "PowerPoint → multilingual MP4 (INMV)",
     desc: "Speaker notes become AI narration automatically. Drop in your deck, pick a language, get a finished training video. No voice actor, no studio, no editor.",
   },
   {

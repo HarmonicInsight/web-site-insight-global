@@ -68,16 +68,16 @@ export const products: Product[] = [
   {
     code: "INMV",
     name: "Insight Training Studio",
-    tagline: "PowerPoint to multilingual training video — in five minutes.",
+    tagline: "PowerPoint to multilingual training video, on your desktop.",
     iconBg: "from-violet-400 via-purple-500 to-indigo-600",
     emoji: "🎬",
     description:
       "Speaker notes become AI narration. Slides become MP4. Screen recordings become tutorial manuals. Scripts become podcast episodes. Insight Training Studio is the all-in-one content studio that turns the work you already do into broadcast-quality training material — in 47 languages, on your PC, with no editor in the loop.",
     features: [
-      { title: "PowerPoint or PDF → MP4 in five minutes", desc: "Speaker notes become AI narration automatically. No voice actor, no studio, no editor — finished video in the time it takes to grab coffee." },
+      { title: "PowerPoint or PDF → narrated MP4", desc: "Speaker notes become AI narration automatically. No voice actor, no studio, no editor in the loop." },
       { title: "47-language AI narration", desc: "Edge Neural TTS delivers near-human voices across all 47 languages. Localize a global onboarding deck without re-recording a single slide." },
       { title: "Three TTS engines + ElevenLabs", desc: "Cloud (Edge Neural) + offline (VOICEVOX, Windows OneCore). ElevenLabs voice cloning via BYOK for branded narrators." },
-      { title: "Three ways to add narration", desc: "AI voice (47 languages), record your own voice in-app (per scene), or import existing WAV/MP3. Mix and match per scene — founder message in real voice, the rest in AI. No competitor lets you do that." },
+      { title: "Three ways to add narration", desc: "AI voice (47 languages), record your own voice in-app (per scene), or import existing WAV/MP3. Mix and match per scene — founder message in real voice, the rest in AI." },
       { title: "Screen recording → tutorial / manual", desc: "Capture on-screen actions, AI converts to documented tutorial slides with auto-narration. Perfect for SaaS onboarding and IT manuals." },
       { title: "Audio podcast export", desc: "Same workflow, audio-only output. Generate WAV / MP3 podcast episodes from PPTX or scripts. Ready for Spotify, Apple Podcasts, or internal feeds." },
       { title: "Audio-first video workflow", desc: "Export the narration as WAV first, then build matching slides or footage to fit. Pro-grade studio flexibility for high-end production." },

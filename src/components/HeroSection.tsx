@@ -56,12 +56,12 @@ export default function HeroSection() {
             className="text-lg md:text-xl text-ink-500 leading-relaxed max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "240ms" }}
           >
-            Drop a <strong className="text-ink-700">PowerPoint</strong> — get a 47-language training video.
+            Drop a <strong className="text-ink-700">PowerPoint</strong> — get a 47-language narrated training video.
             <br className="hidden md:block" />
             Record a <strong className="text-ink-700">screen action</strong> — get a captioned tutorial manual.
             <br className="hidden md:block" />
             <span className="text-ink-900 font-medium">
-              {" "}Both, in five minutes. No voice actor, no editor, no cloud upload.
+              {" "}One desktop app. Bring your own AI keys. No cloud upload.
             </span>
           </p>
 

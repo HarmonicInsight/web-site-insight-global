@@ -16,7 +16,7 @@ export default function DualEntrySection() {
         "Subtitles, BGM, transitions, thumbnails — all built in",
       ],
       bestFor: "L&D · HR · global onboarding · accessibility",
-      cta: "PowerPoint → MP4 in 5 minutes",
+      cta: "PowerPoint → multilingual MP4",
     },
     {
       label: "Entry B",
@@ -35,7 +35,7 @@ export default function DualEntrySection() {
         "Output as video tutorial or step-by-step PDF documentation",
       ],
       bestFor: "SaaS onboarding · IT manuals · DevRel · customer success",
-      cta: "Screen recording → Tutorial in 5 minutes",
+      cta: "Screen recording → Captioned tutorial",
     },
   ];
 
@@ -50,8 +50,8 @@ export default function DualEntrySection() {
             One tool, <span className="text-gradient-gold">two entry points.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Whatever you have — a slide deck or a screen full of clicks — the same five-minute pipeline
-            takes you all the way to a multilingual, SCORM-ready video.
+            Whatever you have — a slide deck or a screen full of clicks — the same pipeline takes you to a
+            multilingual, SCORM-ready video.
           </p>
         </div>
 
