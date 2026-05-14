@@ -128,13 +128,17 @@ export default function HeroSection() {
           style={{ animationDelay: "640ms" }}
         >
           <HeroVideo />
+          {/* Video caption */}
+          <p className="mt-3 text-center text-xs text-ink-500">
+            90-second product overview &middot; what the app actually does, recorded on a real PowerPoint
+          </p>
           {/* Stats bar */}
           <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-ink-500">
             <span><strong className="text-ink-800">47</strong> languages</span>
-            <span><strong className="text-ink-800">5</strong> min to first export</span>
+            <span><strong className="text-ink-800">6</strong> AI translation engines (BYOK)</span>
             <span><strong className="text-ink-800">2</strong> entry points (slides + screen)</span>
             <span><strong className="text-ink-800">SCORM 1.2</strong> ready</span>
-            <span><strong className="text-ink-800">0</strong> cloud upload</span>
+            <span><strong className="text-ink-800">0</strong> cloud upload of source files</span>
           </div>
         </div>
       </div>
