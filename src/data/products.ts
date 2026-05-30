@@ -54,7 +54,7 @@ export const products: Product[] = [
       { title: "Four operations on one file", desc: "Translate · Simplify (CEFR / JLPT / HSK / TOPIK) · Summarize · Refine to formal tone." },
       { title: "Layout stays intact", desc: "Fonts, tables, images, embedded objects — preserved exactly as the original." },
       { title: "Glossary + translation memory", desc: "CSV/Excel + DeepL Glossary sync, TMX standard. CAT-tool features in a drag-and-drop UI." },
-      { title: "Use your own AI keys (BYOK)", desc: "Bring keys for any of the six engines. Most teams stay within free tiers (~3M chars/month, combined)." },
+      { title: "Use your own AI keys (BYOK)", desc: "Bring keys for any of the six engines. Several engines (DeepL, Google, Gemini) offer free monthly quotas you can tap before paid usage." },
       { title: "Local processing", desc: "Your documents never leave your PC. No cloud upload. No data harvesting." },
     ],
     bestFor: [
