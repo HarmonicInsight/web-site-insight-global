@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import FamilyBar from "@/components/FamilyBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -287,7 +286,6 @@ export default function AffiliatesPage() {
 
   return (
     <>
-      <FamilyBar />
       <Header />
       <main className="pb-16">
         {/* Umbrella context bar */}

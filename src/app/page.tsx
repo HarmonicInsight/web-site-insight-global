@@ -1,4 +1,3 @@
-import FamilyBar from "@/components/FamilyBar";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TwoProductsShowcase from "@/components/TwoProductsShowcase";
@@ -23,7 +22,6 @@ import Footer from "@/components/Footer";
 export default function HomePage() {
   return (
     <>
-      <FamilyBar />
       <Header />
       <main>
         <HeroSection />

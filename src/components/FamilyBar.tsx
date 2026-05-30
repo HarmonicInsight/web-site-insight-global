@@ -28,7 +28,7 @@ export default function FamilyBar() {
           <span className="flex items-center">
             <span className="text-gray-600 px-1">·</span>
             <a
-              href="https://www.insight-office.com/en"
+              href="https://www.insight-office.com/ja"
               className="px-2 py-0.5 text-gray-300 hover:text-white transition-colors"
             >
               Japan market
