@@ -44,14 +44,15 @@ export default function DualEntrySection() {
       <div className="container-narrow">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-600 mb-3">
-            Insight Training Studio · Two ways in
+            Inside Insight Training Studio · Two input modes (one product)
           </p>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight text-ink-900 mb-5">
-            One tool, <span className="text-gradient-gold">two entry points.</span>
+            <span className="text-ink-500 text-2xl md:text-3xl block mb-2">Within Training Studio:</span>
+            One app, <span className="text-gradient-gold">two input modes.</span>
           </h2>
           <p className="text-lg text-ink-500 leading-relaxed">
-            Whatever you have — a slide deck or a screen full of clicks — the same pipeline takes you to a
-            multilingual, SCORM-ready video.
+            Both modes below are features <em className="not-italic font-semibold text-ink-700">inside Insight Training Studio</em> —
+            they are not separate products. (For the other product, Insight Doc Translator, see the section above.)
           </p>
         </div>
 

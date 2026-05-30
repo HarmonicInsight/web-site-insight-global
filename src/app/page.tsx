@@ -1,6 +1,7 @@
 import FamilyBar from "@/components/FamilyBar";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import TwoProductsShowcase from "@/components/TwoProductsShowcase";
 import SocialProofBar from "@/components/SocialProofBar";
 import TrustBadgesSection from "@/components/TrustBadgesSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -26,6 +27,12 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        {/*
+          Two clearly separated product showcases (each with its own demo video).
+          Placed immediately after Hero so reviewers / Lemon Squeezy / first-time
+          visitors see "two distinct products" before any shared / pipeline copy.
+        */}
+        <TwoProductsShowcase />
         <SocialProofBar />
         <TrustBadgesSection />
         <ProblemSection />
