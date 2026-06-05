@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   SUPPORTED_PRODUCTS,
   PRODUCT_DISPLAY,
@@ -14,7 +16,9 @@ export const metadata: Metadata = {
 
 export default function ReleasesPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Header />
+      <main className="min-h-screen bg-white">
       {/* Hero */}
       <section className="border-b border-ink-100 bg-gradient-to-b from-ink-50/40 to-white py-16 md:py-20">
         <div className="container-narrow">
@@ -130,6 +134,8 @@ export default function ReleasesPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
