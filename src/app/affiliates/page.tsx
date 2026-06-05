@@ -282,7 +282,8 @@ const DownloadIcon = (
 );
 
 export default function AffiliatesPage() {
-  const lsApply = "https://harmonic-insight.lemonsqueezy.com/affiliates";
+  // 海外($)サイト → Global ストアの affiliate（$売上を成果計上するため）
+  const lsApply = "https://harmonic-insight-global.lemonsqueezy.com/affiliates";
 
   return (
     <>
