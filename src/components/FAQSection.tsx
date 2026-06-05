@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "What if it doesn’t work for me?",
-    a: "30-day money back, no questions asked. If your typical workflow doesn’t feel meaningfully faster within 30 days, email us and we’ll refund in full.",
+    a: "Start with the free trial — full features, no credit card required — so you can confirm it fits your workflow before you ever pay. For billing issues (defects or double charges) or to stop auto-renewal, just email support@h-insight.jp.",
   },
   {
     q: "Does it work on macOS or Linux?",

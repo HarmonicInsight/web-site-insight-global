@@ -47,8 +47,8 @@ export default function TrustBadgesSection() {
       ),
     },
     {
-      title: "30-day money back",
-      caption: "Full refund, no questions asked",
+      title: "Free trial",
+      caption: "Full features, no credit card",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
           <path
