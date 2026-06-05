@@ -50,6 +50,7 @@ export default function TwoProductsShowcase() {
         ariaLabel="Insight Training Studio product demo"
         accentGradient={inmv.iconBg}
         primaryCta={`Buy Personal — ${inmv.prices.personal}/year`}
+        businessCta={`Buy Business — ${inmv.prices.business}/seat/year`}
         brochureHref="/brochures/insight-training-studio-brochure.pdf"
         latestVersion={inmvLatest}
         reverse={false}
@@ -67,6 +68,7 @@ export default function TwoProductsShowcase() {
         ariaLabel="Insight Doc Translator product demo"
         accentGradient={inst.iconBg}
         primaryCta={`Buy Personal — ${inst.prices.personal}/year`}
+        businessCta={`Buy Business — ${inst.prices.business}/seat/year`}
         brochureHref="/brochures/insight-doc-translator-brochure.pdf"
         latestVersion={instLatest}
         reverse={true}

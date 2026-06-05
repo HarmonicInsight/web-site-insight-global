@@ -16,6 +16,7 @@ type Props = {
   ariaLabel: string;
   accentGradient: string;  // e.g. "from-violet-400 via-purple-500 to-indigo-600"
   primaryCta: string;
+  businessCta?: string;
   trialCta?: string;
   brochureHref?: string;
   reverse?: boolean;       // mirror layout (video right vs left)
@@ -39,6 +40,7 @@ export default function ProductShowcase({
   ariaLabel,
   accentGradient,
   primaryCta,
+  businessCta,
   trialCta = "30-day free trial",
   brochureHref,
   reverse,
@@ -64,6 +66,7 @@ export default function ProductShowcase({
   }, []);
 
   const checkoutPersUrl = getCheckoutUrl(code, "PERS");
+  const checkoutBizUrl = getCheckoutUrl(code, "BIZ");
   const trialUrl = getTrialUrl(code);
 
   return (
@@ -124,6 +127,16 @@ export default function ProductShowcase({
               >
                 {primaryCta}
               </a>
+              {businessCta && (
+                <a
+                  href={checkoutBizUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gold-500 hover:bg-gold-400 text-ink-900 text-sm font-semibold transition-colors"
+                >
+                  {businessCta}
+                </a>
+              )}
               <a
                 href={trialUrl}
                 target="_blank"

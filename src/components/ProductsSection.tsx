@@ -77,23 +77,35 @@ export default function ProductsSection() {
                   ))}
                 </ul>
 
-                {/* CTAs */}
+                {/* CTAs — Personal (individuals) + Business (teams) side by side */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href={getCheckoutUrl(product.code, "PERS")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-ink-900 hover:bg-ink-800 text-white text-sm font-semibold transition-colors"
+                    className="flex-1 inline-flex flex-col items-center justify-center gap-0.5 px-5 py-3 rounded-xl bg-ink-900 hover:bg-ink-800 text-white text-sm font-semibold transition-colors"
                   >
-                    Buy Personal — {product.prices.personal}/year
+                    <span>Personal — {product.prices.personal}/year</span>
+                    <span className="text-[10px] font-normal text-white/60">For individuals · 1 device</span>
                   </a>
+                  <a
+                    href={getCheckoutUrl(product.code, "BIZ")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex flex-col items-center justify-center gap-0.5 px-5 py-3 rounded-xl bg-gold-500 hover:bg-gold-400 text-ink-900 text-sm font-semibold transition-colors"
+                  >
+                    <span>Business — {product.prices.business}/seat/year</span>
+                    <span className="text-[10px] font-normal text-ink-900/60">For teams & organizations</span>
+                  </a>
+                </div>
+                <div className="mt-3">
                   <a
                     href={getTrialUrl(product.code)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-ink-200 hover:border-gold-400 hover:bg-gold-50/50 text-ink-700 text-sm font-semibold transition-all"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-ink-200 hover:border-gold-400 hover:bg-gold-50/50 text-ink-700 text-sm font-semibold transition-all"
                   >
-                    30-day free trial
+                    Not sure? Start a free trial first
                   </a>
                 </div>
 
