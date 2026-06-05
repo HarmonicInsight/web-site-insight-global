@@ -10,10 +10,10 @@
  */
 
 const FALLBACK_CHECKOUT = {
-  INST_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/83eaa3a9-d5cc-4f92-badd-61172d3f1689",
-  INST_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/f50fb84b-2afa-446b-82ef-64caa3a09964",
-  INMV_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/8188b251-c68e-437a-8c85-143e90038ec7",
-  INMV_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/8bd3095e-f4b0-4a67-9e4b-a2420c4d8195",
+  INST_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/46732d69-c34f-4eb4-bdd6-31667b6a6985",
+  INST_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/b46f437b-2903-430f-acc0-c11ef436c951",
+  INMV_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/a9d85148-f3ad-4a98-8f15-a78f7925591d",
+  INMV_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/d7e2bc72-9f8b-40aa-a6b2-f7abccf0ed38",
 };
 
 export const CHECKOUT_URLS = {
