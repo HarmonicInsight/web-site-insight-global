@@ -26,6 +26,20 @@ export type ProductCode = "INMV" | "INST";
 
 const INMV_VERSIONS: ReleaseVersion[] = [
   {
+    version: "1.0.8",
+    releaseDate: "2026-06-05",
+    highlight:
+      "SCORM 1.2 export ships straight into your LMS, plus scene-level recording, dual picture-in-picture overlays, and audio-first output.",
+    bullets: [
+      "SCORM 1.2 package export for Moodle / Canvas / TalentLMS / Cornerstone and other major LMS. Auto-tracks completion at 95% viewed, resume-position seek, and session time — verified with zero parser warnings on Rustici SCORM Cloud and on Moodle 4.5.",
+      "Per-scene in-app microphone recording (NAudio WaveIn). Switch among three narration sources (auto-voice TTS / recording / import) per scene with a single flag; the source in use is shown during export and preview.",
+      "Bulk Narrator Assignment: edit language and narrator voice per slide in a single view — with jump-to-current, voice and modified-row filters, JSON import / export, and AI prompt copy.",
+      "Dual picture-in-picture overlays plus a sign-language slot for accessibility-ready output, and a new 'Manual creation' ribbon group consolidating screen recording and step capture for tutorial videos.",
+      "Refreshed scene editing panel: five audio sources unified into one row with Segoe MDL2 icons, two-line scene titles, and a wrapping action row so buttons are never cut off.",
+      "Fixes: wipe-position slider now reflected in output and clamped on-screen, corrected negative recording-length display, and resolved progress-rollback and scene-preview status issues.",
+    ],
+  },
+  {
     version: "1.0.7",
     releaseDate: "2026-05-07",
     highlight:
