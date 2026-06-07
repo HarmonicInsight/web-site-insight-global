@@ -58,12 +58,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-ink-600">
               <li>
                 <a
-                  href="https://license.h-insight.jp/download/INST?lang=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#products"
                   className="hover:text-gold-700 transition-colors"
                 >
-                  Free trial
+                  Free trials
                 </a>
               </li>
               <li>

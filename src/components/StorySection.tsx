@@ -23,25 +23,30 @@ export default function StorySection() {
           {/* Left: text */}
           <div className="lg:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-400 mb-4">
-              Why we built this
+              A two-person family company
             </p>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              Every translator we know{" "}
-              <span className="text-gradient-gold">hated their workflow.</span>
+              A family company with one engineer.{" "}
+              <span className="text-gradient-gold">The rest of the team is AI.</span>
             </h2>
 
             <div className="space-y-5 text-ink-200 leading-relaxed text-lg">
               <p>
-                We watched a colleague spend an entire Saturday translating a 60-slide
-                deck for a Monday board meeting. Copy, paste, translate, paste back,
-                fix the layout, fix the font, fix the chart that wrapped wrong. Repeat
-                60 times.
+                HARMONIC insight is our family company — my wife and me. She runs it;
+                I write every line of code, the way I think the next decade gets made:
+                one builder, augmented by AI, shipping products that used to take a whole team.
               </p>
               <p>
-                That Saturday became this app — and the Mondays that followed.
+                I don&apos;t just sell these tools — I live on them. I produce
+                multilingual training videos and translated documents myself, at a scale
+                that normally needs a studio and a localization team. They&apos;re the
+                proof of the whole idea: AI lets one builder deliver work that used to
+                require many.
               </p>
               <p className="text-base text-ink-300 italic">
-                No subscriptions. No data lock-in. Use your own DeepL or OpenAI key — we never see your text. Pay once. That&apos;s it.
+                Lean isn&apos;t fragile. Your files never leave your machine — the app
+                runs on your own AI key — and support comes straight from the person who
+                wrote the code.
               </p>
             </div>
 
@@ -51,14 +56,14 @@ export default function StorySection() {
                 <div className="relative w-14 h-14 rounded-full overflow-hidden ring-2 ring-gold-400/40 flex-shrink-0">
                   <Image
                     src="/about/erik-arthur.png"
-                    alt="HARMONIC insight founder"
+                    alt="Erik Arthur, founder of HARMONIC insight"
                     fill
                     sizes="56px"
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Founder, HARMONIC insight</div>
+                  <div className="font-semibold text-white">Erik Arthur — Founder, HARMONIC insight</div>
                   <div className="text-sm text-ink-400">Tokyo, Japan · est. August 2025</div>
                 </div>
               </div>

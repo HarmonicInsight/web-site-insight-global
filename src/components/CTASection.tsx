@@ -11,11 +11,11 @@ export default function CTASection() {
 
           <div className="relative">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-400 mb-4">
-              One tool replaces three
+              Two flagship apps · start free
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5">
-              One Office file.{" "}
-              <span className="text-gradient-gold">Every kind of work.</span>
+              Two apps.{" "}
+              <span className="text-gradient-gold">Every kind of multilingual work.</span>
             </h2>
             <p className="text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto mb-10">
               30-day trial. No credit card. No setup. Download, drop a file, and see what happens.
@@ -23,7 +23,7 @@ export default function CTASection() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
-                href="https://license.h-insight.jp/download/INST?lang=en"
+                href="https://license.h-insight.jp/download/INMV?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-ink-900 text-base font-bold shadow-glow-gold transition-all"
@@ -31,13 +31,18 @@ export default function CTASection() {
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Try it free
+                Try Training Studio free
               </a>
               <a
-                href="#pricing"
+                href="https://license.h-insight.jp/download/INST?lang=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-ink-700 hover:border-gold-400 hover:bg-ink-800 text-white text-base font-semibold transition-all"
               >
-                See pricing
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Try Doc Translator free
               </a>
             </div>
 
