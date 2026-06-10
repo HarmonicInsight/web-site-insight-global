@@ -26,6 +26,17 @@ export type ProductCode = "INMV" | "INST";
 
 const INMV_VERSIONS: ReleaseVersion[] = [
   {
+    version: "1.0.9",
+    releaseDate: "2026-06-10",
+    highlight:
+      "Re-exports get dramatically faster: unchanged scenes are reused instantly instead of being re-encoded — fix one scene and re-export in seconds.",
+    bullets: [
+      "Scene-level render cache: each scene's rendered video is cached, keyed on everything that affects its output (media, narration audio, subtitles, styles, resolution, motion). Unchanged scenes are reused instantly with a 'reusing previous render ⚡' progress message.",
+      "A 'fix one scene out of thirty and re-export' cycle drops from a full re-encode to a single scene + concat — ideal for iterative review workflows and multilingual variants. Cache capped at 2 GB with oldest-first eviction, auto-invalidated on app updates.",
+      "Media duration probes memoized per file, eliminating repeated analysis during export and scene switching. Scene and overlay lists rebuild in a single UI update for smoother editing on large decks.",
+    ],
+  },
+  {
     version: "1.0.8",
     releaseDate: "2026-06-05",
     highlight:
