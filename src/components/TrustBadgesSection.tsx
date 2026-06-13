@@ -119,6 +119,17 @@ export default function TrustBadgesSection() {
             </div>
           ))}
         </div>
+
+        <div className="mt-10 mx-auto max-w-xl rounded-xl border border-ink-100 bg-ink-50/40 px-6 py-5 text-center">
+          <div className="text-sm font-semibold text-ink-900">
+            Available across Microsoft, Google &amp; Apple platforms
+          </div>
+          <div className="text-[11px] text-ink-500 leading-snug mt-2">
+            ✓ 11 apps live on Google Play
+            <span className="mx-1.5 text-ink-300">·</span>
+            App Store &amp; Microsoft Store coming soon
+          </div>
+        </div>
       </div>
     </section>
   );
