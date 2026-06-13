@@ -51,7 +51,7 @@ export default function CTASection() {
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                30-day refund, no questions asked
+                Free version — no sign-up needed
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

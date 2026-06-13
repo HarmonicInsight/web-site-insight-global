@@ -145,7 +145,7 @@ export default function PricingSection() {
 
         <p className="text-xs text-ink-400 text-center mt-10 max-w-2xl mx-auto">
           Prices are billed in USD. Lemon Squeezy converts to your local currency at checkout, and handles tax and invoices globally.
-          30-day refund, no questions asked. Looking for an enterprise plan or invoice billing?{" "}
+          Free version available, plus a 30-day full-feature trial (no credit card). Looking for an enterprise plan or invoice billing?{" "}
           <a href="mailto:contact@h-insight.jp" className="text-gold-700 hover:text-gold-800 underline">Contact us</a>.
         </p>
       </div>

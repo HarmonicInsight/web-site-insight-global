@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s · HARMONIC insight",
   },
   description:
-    "AI translation, simplification, and summarization for PowerPoint, PDF, Word, and Excel — in one desktop app. 47 languages, 6 AI engines, layout untouched. Use your own AI keys. No subscription. Local processing.",
+    "AI translation, simplification, and summarization for PowerPoint, PDF, Word, and Excel — in one desktop app. 47 languages, 6 AI engines, layout untouched. Use your own AI keys. Free version available. Local processing.",
   keywords: [
     "office translator",
     "powerpoint translator",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HARMONIC insight — One Office file. Four kinds of work.",
     description:
-      "Translate into 47 languages across 6 AI engines, simplify for non-native readers, summarize, and refine — layout untouched. Use your own AI keys. No subscription.",
+      "Translate into 47 languages across 6 AI engines, simplify for non-native readers, summarize, and refine — layout untouched. Use your own AI keys. Free version available.",
     type: "website",
     locale: "en_US",
     url: SITE_URL,
