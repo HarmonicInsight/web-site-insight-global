@@ -54,7 +54,7 @@ export default function Header() {
               </defs>
               <rect width="28" height="28" rx="7" fill="url(#brand-grad-header)" />
               <path
-                d="M9 8.5v11M19 8.5v11M9 14h10"
+                d="M7.5 8.5v11M14.5 8.5v11M7.5 14h7M20 12.5v7M20 9.1v0.1"
                 stroke="#fff"
                 strokeWidth="2.2"
                 strokeLinecap="round"
