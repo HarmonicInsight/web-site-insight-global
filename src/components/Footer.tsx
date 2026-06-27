@@ -49,6 +49,16 @@ export default function Footer() {
               <li><a href="#features" className="hover:text-gold-700 transition-colors">Features</a></li>
               <li><a href="#pricing" className="hover:text-gold-700 transition-colors">Pricing</a></li>
               <li><a href="#comparison" className="hover:text-gold-700 transition-colors">vs Alternatives</a></li>
+              <li>
+                <a
+                  href="https://python.h-insight.jp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-700 transition-colors"
+                >
+                  InsightPy (coming soon) ↗
+                </a>
+              </li>
             </ul>
           </div>
 
