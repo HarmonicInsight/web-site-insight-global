@@ -18,6 +18,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
+    { href: "/office", label: "Insight Office" },
     { href: "#products", label: "Products" },
     { href: "#comparison", label: "vs Alternatives" },
     { href: "#pricing", label: "Pricing" },

@@ -44,6 +44,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-widest text-ink-400 mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-ink-600">
+              <li><a href="/office" className="hover:text-gold-700 transition-colors">Insight Office</a></li>
               <li><a href="#products" className="hover:text-gold-700 transition-colors">Insight Doc Translator</a></li>
               <li><a href="#products" className="hover:text-gold-700 transition-colors">Insight Training Studio</a></li>
               <li><a href="#features" className="hover:text-gold-700 transition-colors">Features</a></li>
