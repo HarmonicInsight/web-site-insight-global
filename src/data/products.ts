@@ -14,6 +14,8 @@ const FALLBACK_CHECKOUT = {
   INST_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/b46f437b-2903-430f-acc0-c11ef436c951",
   INMV_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/a9d85148-f3ad-4a98-8f15-a78f7925591d",
   INMV_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/d7e2bc72-9f8b-40aa-a6b2-f7abccf0ed38",
+  INPY_PERS: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/8770e161-a63a-4d40-8389-d452fa12c6a7",
+  INPY_BIZ: "https://harmonic-insight-global.lemonsqueezy.com/checkout/buy/c33c3f25-006d-4a6b-a603-35057dad468f",
 };
 
 export const CHECKOUT_URLS = {
@@ -21,11 +23,13 @@ export const CHECKOUT_URLS = {
   INST_BIZ: process.env.NEXT_PUBLIC_LS_GLOBAL_INST_BIZ || FALLBACK_CHECKOUT.INST_BIZ,
   INMV_PERS: process.env.NEXT_PUBLIC_LS_GLOBAL_INMV_PERS || FALLBACK_CHECKOUT.INMV_PERS,
   INMV_BIZ: process.env.NEXT_PUBLIC_LS_GLOBAL_INMV_BIZ || FALLBACK_CHECKOUT.INMV_BIZ,
+  INPY_PERS: process.env.NEXT_PUBLIC_LS_GLOBAL_INPY_PERS || FALLBACK_CHECKOUT.INPY_PERS,
+  INPY_BIZ: process.env.NEXT_PUBLIC_LS_GLOBAL_INPY_BIZ || FALLBACK_CHECKOUT.INPY_BIZ,
 } as const;
 
 export const TRIAL_BASE = "https://license.h-insight.jp/download";
 
-export type ProductCode = "INST" | "INMV";
+export type ProductCode = "INST" | "INMV" | "INPY";
 export type Plan = "PERS" | "BIZ";
 
 export type Product = {
@@ -97,6 +101,30 @@ export const products: Product[] = [
       "Public-sector, education, and regulated industries needing accessibility-ready output",
     ],
     prices: { personal: "$199", business: "$499" },
+  },
+  {
+    code: "INPY",
+    name: "InsightPy",
+    tagline: "Zero-setup Python. Write it, save it, run it on a schedule.",
+    iconBg: "from-blue-400 via-sky-500 to-violet-600",
+    emoji: "🐍",
+    description:
+      "The AI wrote the code — but there's nowhere to run it. InsightPy bundles a Python runtime and the core libraries inside a Windows app, so you can paste AI-written code and run it on the spot: Excel / Word / PowerPoint automation, file cleanup, screen-level RPA, and unattended scheduled execution. No pip, no PATH, no setup.",
+    features: [
+      { title: "Bundled Python — zero setup", desc: "The Python runtime and libraries ship inside the app. No install, no pip, no PATH. Write and run on day one." },
+      { title: "Run AI-written code as-is", desc: "Paste generated Python and run it. openpyxl / python-pptx / python-docx / pypdf / pyautogui / Pillow are bundled." },
+      { title: "Office automation & RPA", desc: "Drive Excel, Word and PowerPoint, organize files, and automate screen-level tasks (RPA)." },
+      { title: "Scheduled, unattended execution", desc: "Run your scripts daily or weekly with no one at the keyboard. Set it once and let it run." },
+      { title: "Free learning center", desc: "Built-in lessons make Python approachable — learn for free, pay only when you use it for real work." },
+      { title: "Local processing", desc: "Your scripts and data stay on your PC. No cloud upload." },
+    ],
+    bestFor: [
+      "Ops and back-office teams automating repetitive Excel and file work",
+      "People who have AI write code but have nowhere to run it",
+      "Analysts scheduling recurring reports and data pulls",
+      "Anyone replacing a heavyweight RPA tool with a simple, no-setup alternative",
+    ],
+    prices: { personal: "$99", business: "$299" },
   },
 ];
 

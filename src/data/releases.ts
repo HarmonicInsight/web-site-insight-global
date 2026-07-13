@@ -22,7 +22,7 @@ export type ReleaseVersion = {
   bullets: string[];
 };
 
-export type ProductCode = "INMV" | "INST";
+export type ProductCode = "INMV" | "INST" | "INPY";
 
 const INMV_VERSIONS: ReleaseVersion[] = [
   {
@@ -109,9 +109,24 @@ const INST_VERSIONS: ReleaseVersion[] = [
   },
 ];
 
+const INPY_VERSIONS: ReleaseVersion[] = [
+  {
+    version: "1.0.3",
+    releaseDate: "2026-07-02",
+    highlight: "Zero-setup Python runtime with Office automation, RPA and unattended scheduled execution.",
+    bullets: [
+      "Bundled Python runtime and core libraries (openpyxl / python-pptx / python-docx / pypdf / pyautogui / Pillow) — no install, no pip, no PATH.",
+      "Run AI-written Python as-is; save scripts, organize into projects, and run multi-file jobs.",
+      "Unattended scheduled execution (daily / weekly) for file cleanup, reporting and screen-level RPA.",
+      "Built-in learning center with lessons in Japanese and English.",
+    ],
+  },
+];
+
 const VERSIONS_BY_PRODUCT: Record<ProductCode, ReleaseVersion[]> = {
   INMV: INMV_VERSIONS,
   INST: INST_VERSIONS,
+  INPY: INPY_VERSIONS,
 };
 
 export const PRODUCT_DISPLAY: Record<ProductCode, { name: string; tagline: string }> = {
@@ -123,6 +138,10 @@ export const PRODUCT_DISPLAY: Record<ProductCode, { name: string; tagline: strin
     name: "Insight Doc Translator",
     tagline: "Translate Word / Excel / PowerPoint / PDF — layout intact, 47 languages × 6 engines.",
   },
+  INPY: {
+    name: "InsightPy",
+    tagline: "Zero-setup Python. Office automation, RPA and scheduled execution — no pip, no PATH.",
+  },
 };
 
 export function getAllVersions(code: ProductCode): ReleaseVersion[] {
@@ -133,4 +152,4 @@ export function getLatestVersion(code: ProductCode): ReleaseVersion | null {
   return VERSIONS_BY_PRODUCT[code]?.[0] ?? null;
 }
 
-export const SUPPORTED_PRODUCTS: ProductCode[] = ["INMV", "INST"];
+export const SUPPORTED_PRODUCTS: ProductCode[] = ["INMV", "INST", "INPY"];

@@ -57,7 +57,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-gold-700 transition-colors"
                 >
-                  InsightPy (coming soon) ↗
+                  InsightPy ↗
                 </a>
               </li>
             </ul>
