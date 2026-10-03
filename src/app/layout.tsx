@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GaTag from "@/components/GaTag";
 import "./globals.css";
 
 const SITE_URL = "https://insightoffice.io";
@@ -67,7 +68,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <GaTag />
+        {children}
+      </body>
     </html>
   );
 }
