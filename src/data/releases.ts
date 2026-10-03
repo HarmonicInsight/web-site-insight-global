@@ -111,6 +111,16 @@ const INST_VERSIONS: ReleaseVersion[] = [
 
 const INPY_VERSIONS: ReleaseVersion[] = [
   {
+    version: "1.0.6",
+    releaseDate: "2026-10-03",
+    highlight: "Reliability update: your scripts are never lost, and unattended runs stop when they should.",
+    bullets: [
+      "Edits are saved automatically on close; inserting samples or AI-generated code no longer replaces the open file.",
+      "Unattended runs that exceed their time limit now stop the running step too; disabled schedules stay disabled after editing.",
+      "Saving survives a power loss mid-write, and scripts that print a lot no longer freeze the window.",
+    ],
+  },
+  {
     version: "1.0.3",
     releaseDate: "2026-07-02",
     highlight: "Zero-setup Python runtime with Office automation, RPA and unattended scheduled execution.",
