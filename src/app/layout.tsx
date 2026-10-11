@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   // Search Console ownership (erik@h-insight.jp). Removing it drops verification.
-  verification: { google: "QTI1_jNt1nKEnxaRoJJitZbP36WB4qtXuI7Wykdmt7g" },
+  verification: { google: "3F1oVxzMFTAe8ZyNnKw3J7ofBvO75kTP2IRA5VY2-_k" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
