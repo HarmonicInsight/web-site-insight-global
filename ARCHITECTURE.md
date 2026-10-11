@@ -75,7 +75,6 @@ ProductsSection
 FeaturesGrid
 UseCasesSection       6 業種別カード（SaaS / Sales / Legal / Academic / HR / Finance）
 ComparisonSection     vs DeepL / ChatGPT / Copilot（フェアな両側評価）
-TestimonialsSection   3 件（早期アクセスユーザーの composite quote）
 StorySection          ダーク背景 "Built by translators, for translators" + 4 principles
 PricingSection        $199 / $499
 NewsletterSection     "Get notified when macOS arrives"

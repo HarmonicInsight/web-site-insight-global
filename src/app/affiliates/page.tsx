@@ -119,22 +119,21 @@ const BANNER_SIZES: ReadonlyArray<{
   w: number;
   h: number;
   use: string;
-  variants: ReadonlyArray<"outcome" | "emotional" | "testimonial" | "comparison" | "ivory">;
+  variants: ReadonlyArray<"outcome" | "emotional" | "comparison" | "ivory">;
 }> = [
   { slug: "leaderboard-728x90",       name: "Leaderboard",         w: 728,  h: 90,   use: "Top of page",                variants: ["outcome", "emotional"] },
   { slug: "medium-rectangle-300x250", name: "Medium Rectangle",    w: 300,  h: 250,  use: "Sidebar / in-content",       variants: ["outcome", "emotional"] },
   { slug: "skyscraper-160x600",       name: "Wide Skyscraper",     w: 160,  h: 600,  use: "Sidebar tall",               variants: ["outcome", "emotional"] },
   { slug: "mobile-320x100",           name: "Mobile Banner",       w: 320,  h: 100,  use: "Mobile sites",               variants: ["outcome", "emotional"] },
-  { slug: "billboard-970x250",        name: "Billboard",           w: 970,  h: 250,  use: "Premium top of page",        variants: ["outcome", "emotional", "testimonial", "comparison", "ivory"] },
-  { slug: "social-og-1200x628",       name: "Social Open Graph",   w: 1200, h: 628,  use: "Twitter/X · LinkedIn share", variants: ["outcome", "emotional", "testimonial", "comparison", "ivory"] },
-  { slug: "instagram-1080x1080",      name: "Instagram Square",    w: 1080, h: 1080, use: "Instagram feed",             variants: ["outcome", "emotional", "testimonial", "comparison", "ivory"] },
-  { slug: "story-vertical-1080x1920", name: "Story / Vertical",    w: 1080, h: 1920, use: "Stories · TikTok · Reels",   variants: ["outcome", "emotional", "testimonial", "comparison", "ivory"] },
+  { slug: "billboard-970x250",        name: "Billboard",           w: 970,  h: 250,  use: "Premium top of page",        variants: ["outcome", "emotional", "comparison", "ivory"] },
+  { slug: "social-og-1200x628",       name: "Social Open Graph",   w: 1200, h: 628,  use: "Twitter/X · LinkedIn share", variants: ["outcome", "emotional", "comparison", "ivory"] },
+  { slug: "instagram-1080x1080",      name: "Instagram Square",    w: 1080, h: 1080, use: "Instagram feed",             variants: ["outcome", "emotional", "comparison", "ivory"] },
+  { slug: "story-vertical-1080x1920", name: "Story / Vertical",    w: 1080, h: 1920, use: "Stories · TikTok · Reels",   variants: ["outcome", "emotional", "comparison", "ivory"] },
 ];
 
 const VARIANT_LABELS: Record<string, { label: string; angle: string; color: string }> = {
   outcome:     { label: "Outcome",     angle: "Big numbers + benefit",            color: "bg-emerald-100 text-emerald-700 border-emerald-200" },
   emotional:   { label: "Emotional",   angle: "Pain → relief",                    color: "bg-rose-100 text-rose-700 border-rose-200" },
-  testimonial: { label: "Testimonial", angle: "Composite quote with avatar",      color: "bg-violet-100 text-violet-700 border-violet-200" },
   comparison:  { label: "Comparison",  angle: "vs DeepL / vs Synthesia framing",  color: "bg-amber-100 text-amber-700 border-amber-200" },
   ivory:       { label: "Ivory",       angle: "Light background — visual variety", color: "bg-stone-100 text-stone-700 border-stone-300" },
 };
