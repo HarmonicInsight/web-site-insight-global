@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd, { softwareApp } from "@/components/JsonLd";
 
 const CHECKOUT = {
   personal:
@@ -15,6 +16,22 @@ export const metadata: Metadata = {
   title: "Insight Office — PDF editor, document compare & your-own-key AI",
   description:
     "A Windows app for real PDF editing (annotate, e-sign, OCR, merge/split), cross-file comparison across Word/Excel/PowerPoint/PDF down to the cell & character, Excel logic analysis, and an optional AI concierge that runs on your own API key. One flat yearly price. 30-day free trial.",
+  alternates: { canonical: "https://insightoffice.io/office" },
+  openGraph: {
+    title: "Insight Office — PDF editor, document compare & your-own-key AI",
+    description:
+      "Real PDF editing, cross-file comparison across Word/Excel/PowerPoint/PDF down to the cell & character, Excel logic analysis, and an optional AI concierge on your own API key.",
+    url: "https://insightoffice.io/office",
+    siteName: "HARMONIC insight",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Insight Office — PDF editor, document compare & your-own-key AI",
+    description:
+      "Real PDF editing, cross-file comparison across Word/Excel/PowerPoint/PDF down to the cell & character, Excel logic analysis, and an optional AI concierge on your own API key.",
+  },
 };
 
 const tools = [
@@ -43,6 +60,18 @@ const tools = [
 export default function OfficePage() {
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          ...softwareApp({
+            name: "Insight Office",
+            description:
+              "A Windows app for PDF editing, cross-file comparison across Word/Excel/PowerPoint/PDF down to the cell & character, Excel logic analysis, and an optional AI concierge on your own API key.",
+            url: "https://insightoffice.io/office",
+            downloadUrl: DOWNLOAD,
+          }),
+        }}
+      />
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero */}

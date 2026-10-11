@@ -12,6 +12,22 @@ export const metadata: Metadata = {
   title: "Release Notes",
   description:
     "Version history and what's new across Insight Training Studio and Insight Doc Translator. Newest releases first.",
+  alternates: { canonical: "https://insightoffice.io/releases" },
+  openGraph: {
+    title: "Release Notes · HARMONIC insight",
+    description:
+      "Version history and what's new across Insight Training Studio and Insight Doc Translator.",
+    url: "https://insightoffice.io/releases",
+    siteName: "HARMONIC insight",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Release Notes · HARMONIC insight",
+    description:
+      "Version history and what's new across Insight Training Studio and Insight Doc Translator.",
+  },
 };
 
 export default function ReleasesPage() {

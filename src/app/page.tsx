@@ -18,10 +18,33 @@ import NewsletterSection from "@/components/NewsletterSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import JsonLd, { softwareApp } from "@/components/JsonLd";
+
+// 構造化データ（価格・評価は載せない）。説明文は競合名を含まない中立の文にする。
+const STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    softwareApp({
+      name: "Insight Doc Translator",
+      description:
+        "Translate, simplify, summarize, and refine PowerPoint, PDF, Word, and Excel files in one Windows desktop app. 47 languages, 6 AI engines, layout preserved, your own AI keys.",
+      url: "https://insightoffice.io/",
+      downloadUrl: "https://license.h-insight.jp/download/INST?lang=en",
+    }),
+    softwareApp({
+      name: "Insight Training Studio",
+      description:
+        "PowerPoint to multilingual training video on your desktop. Speaker notes become AI narration in 47 languages; export MP4, WAV/MP3, and SCORM 1.2 packages.",
+      url: "https://insightoffice.io/",
+      downloadUrl: "https://license.h-insight.jp/download/INMV?lang=en",
+    }),
+  ],
+};
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={STRUCTURED_DATA} />
       <Header />
       <main>
         <HeroSection />

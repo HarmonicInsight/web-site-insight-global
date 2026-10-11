@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     "Earn 20% recurring commission on every HARMONIC insight annual subscription. Annual subscriptions ($199–$499) keep paying year after year. Lemon Squeezy handles tracking, attribution, and payout. A complete kit — playbook, banners, brochures, video formats, brand assets, copy library — ready the moment you're approved.",
   alternates: { canonical: "https://insightoffice.io/affiliates" },
+  openGraph: {
+    title: "Affiliate Program · HARMONIC insight",
+    description:
+      "Earn 20% recurring commission on every HARMONIC insight annual subscription. Lemon Squeezy handles tracking, attribution, and payout.",
+    url: "https://insightoffice.io/affiliates",
+    siteName: "HARMONIC insight",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Affiliate Program · HARMONIC insight",
+    description:
+      "Earn 20% recurring commission on every HARMONIC insight annual subscription. Lemon Squeezy handles tracking, attribution, and payout.",
+  },
 };
 
 const PROGRAM_HIGHLIGHTS = [

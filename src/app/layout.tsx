@@ -20,8 +20,6 @@ export const metadata: Metadata = {
     "training video",
     "powerpoint to video",
     "BYOK",
-    "DeepL alternative",
-    "ChatGPT for office",
     "document localization",
     "layout preserving translation",
   ],
@@ -59,6 +57,8 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  // Search Console ownership (erik@h-insight.jp). Removing it drops verification.
+  verification: { google: "QTI1_jNt1nKEnxaRoJJitZbP36WB4qtXuI7Wykdmt7g" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
