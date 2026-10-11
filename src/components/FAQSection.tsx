@@ -20,8 +20,8 @@ const faqs = [
     a: "Built first for Windows — that’s where Office gets done. macOS is on the roadmap; sign up for the newsletter and we’ll email you when it lands.",
   },
   {
-    q: "How is this different from DeepL?",
-    a: "DeepL is excellent at the translation itself — we use it as one of our engines. The difference is what happens to the rest of your file. DeepL doesn’t preserve PowerPoint layouts well, can’t simplify or summarize, and locks you into one engine. We keep your layout intact, let you switch between six engines per row, and fold simplify, summarize, and refine into the same workflow.",
+    q: "How is this different from a cloud translation service?",
+    a: "Cloud translation services are excellent at the translation itself — we use them as our engines. The difference is what happens to the rest of your file. They often don’t preserve PowerPoint layouts well, can’t simplify or summarize, and lock you into one engine. We keep your layout intact, let you switch between six engines per row, and fold simplify, summarize, and refine into the same workflow.",
   },
   {
     q: "Can I share licenses with my team?",

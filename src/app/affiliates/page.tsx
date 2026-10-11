@@ -170,7 +170,7 @@ const COPY_SNIPPETS = [
     label: "LinkedIn / Note (≤700 chars)",
     file: "INST_medium_700.txt",
     preview:
-      "Stop juggling DeepL for translation, ChatGPT for simplification, Acrobat for PDFs. Insight Doc Translator handles all four operations on one Office file with layout fully preserved...",
+      "Stop juggling a cloud translator for translation, a chat AI for simplification, a PDF editor for PDFs. Insight Doc Translator handles all four operations on one Office file with layout fully preserved...",
   },
   {
     label: "Blog / Article (~1500 chars)",
@@ -188,8 +188,8 @@ const FAQ_GROUPS: FaqGroup[] = [
     heading: "A · Features & format",
     items: [
       {
-        q: "How's the translation quality? Better than DeepL?",
-        a: "You choose from 6 engines based on use case: DeepL (general docs, contracts), Claude/GPT (technical docs with jargon), Google/Azure (high-volume batches), Gemini (cost). Quality depends on which engine you pick. The strength isn't \"better than DeepL\" — it's that you get DeepL plus the ability to switch when needed.",
+        q: "How's the translation quality? Better than a dedicated cloud translator?",
+        a: "You choose from 6 engines based on use case: DeepL (general docs, contracts), Claude/GPT (technical docs with jargon), Google/Azure (high-volume batches), Gemini (cost). Quality depends on which engine you pick. The strength isn't \"better translation than a dedicated translator\" — it's that you get the same engines plus the ability to switch when needed.",
       },
       {
         q: "Can it translate PDFs?",

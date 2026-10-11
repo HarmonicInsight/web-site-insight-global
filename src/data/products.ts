@@ -52,7 +52,7 @@ export const products: Product[] = [
     iconBg: "from-rose-400 via-pink-500 to-fuchsia-600",
     emoji: "🌐",
     description:
-      "DeepL for translation, ChatGPT for simplification, Acrobat for PDFs — Insight Doc Translator does all of it on one file, with your layout fully preserved.",
+      "A cloud translator for translation, a chat AI for simplification, a PDF editor for PDFs — Insight Doc Translator does all of it on one file, with your layout fully preserved.",
     features: [
       { title: "47 languages, 6 AI engines", desc: "DeepL · Google · Azure · Claude · Gemini · OpenAI. Switch per file or per row." },
       { title: "Four operations on one file", desc: "Translate · Simplify (CEFR / JLPT / HSK / TOPIK) · Summarize · Refine to formal tone." },

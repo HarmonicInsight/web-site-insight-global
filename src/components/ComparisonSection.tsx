@@ -12,9 +12,9 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   {
     feature: "Multi-engine, switchable per row",
     insight: { value: "6 engines", note: "Claude/DeepL/Google/Azure/Gemini/OpenAI" },
-    deepl: { value: false, note: "DeepL only" },
-    chatgpt: { value: false, note: "OpenAI only" },
-    copilot: { value: false, note: "Microsoft only" },
+    deepl: { value: false, note: "Own engine only" },
+    chatgpt: { value: false, note: "Own models only" },
+    copilot: { value: false, note: "Own models only" },
   },
   {
     feature: "Easy-language rewrite (CEFR/JLPT/HSK)",
@@ -32,7 +32,7 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   },
   {
     feature: "Glossary + Translation Memory (TMX)",
-    insight: { value: true, note: "TMX, DeepL Glossary sync" },
+    insight: { value: true, note: "TMX, glossary sync" },
     deepl: { value: "Glossary only" },
     chatgpt: { value: false },
     copilot: { value: false },
@@ -55,14 +55,14 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   {
     feature: "Number of languages",
     insight: { value: "47" },
-    deepl: { value: "33" },
+    deepl: { value: "Varies" },
     chatgpt: { value: "Wide", note: "General LLM" },
     copilot: { value: "Wide", note: "General LLM" },
   },
   {
     feature: "Raw translation quality (linguistic only)",
-    insight: { value: "On par", note: "Uses DeepL etc." },
-    deepl: { value: "Excellent", note: "Industry lead" },
+    insight: { value: "On par", note: "Uses the same engines" },
+    deepl: { value: "Excellent", note: "Their core strength" },
     chatgpt: { value: "Very good" },
     copilot: { value: "Good" },
   },
@@ -83,17 +83,9 @@ const rows: { feature: string; insight: Cell; deepl: Cell; chatgpt: Cell; copilo
   {
     feature: "Free tier available",
     insight: { value: "30-day trial" },
-    deepl: { value: true, note: "500K chars/mo" },
-    chatgpt: { value: "Limited GPT-4" },
+    deepl: { value: true, note: "Usually offered" },
+    chatgpt: { value: "Limited" },
     copilot: { value: false },
-  },
-  // Pricing — last
-  {
-    feature: "Annual price",
-    insight: { value: "$199 / year", note: "Annual subscription · all updates included" },
-    deepl: { value: "$108 / year", note: "Subscription" },
-    chatgpt: { value: "$240 / year", note: "Plus plan" },
-    copilot: { value: "$360 / year", note: "Requires MS 365" },
   },
 ];
 
@@ -147,13 +139,13 @@ export default function ComparisonSection() {
                   <div className="text-[10px] text-ink-400 font-normal normal-case">Insight Doc Translator</div>
                 </th>
                 <th className="px-4 py-5">
-                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">DeepL Pro</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">Cloud translation service</div>
                 </th>
                 <th className="px-4 py-5">
-                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">ChatGPT Plus</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">Chat AI</div>
                 </th>
                 <th className="px-4 py-5">
-                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">MS Copilot</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-ink-400">Office suite AI assistant</div>
                 </th>
               </tr>
             </thead>
@@ -174,7 +166,7 @@ export default function ComparisonSection() {
         </div>
 
         <p className="text-xs text-ink-400 text-center mt-6 max-w-2xl mx-auto">
-          Pricing reflects published rates as of 2026. DeepL/ChatGPT/Microsoft are trademarks of their respective companies. We respect the work they do — we just think one app for one file is a better workflow.
+          Compared by product category, based on typical offerings as of 2026 — individual services vary. We respect the work they do — we just think one app for one file is a better workflow.
         </p>
       </div>
     </section>

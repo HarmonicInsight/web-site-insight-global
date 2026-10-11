@@ -1,8 +1,8 @@
 export default function ProblemSection() {
   const before = [
-    { app: "DeepL", action: "Translate the slide", problem: "Layout breaks. Tables collapse. Fonts change." },
-    { app: "ChatGPT", action: "Simplify the language", problem: "Format gone. Have to rebuild from text dump." },
-    { app: "Acrobat", action: "Open the PDF", problem: "Terminology slips. Glossary not enforced." },
+    { app: "Cloud translator", action: "Translate the slide", problem: "Layout breaks. Tables collapse. Fonts change." },
+    { app: "Chat AI", action: "Simplify the language", problem: "Format gone. Have to rebuild from text dump." },
+    { app: "PDF editor", action: "Open the PDF", problem: "Terminology slips. Glossary not enforced." },
     { app: "PowerPoint", action: "Manually fix everything", problem: "Two hours per file. Every. Single. Time." },
   ];
 
